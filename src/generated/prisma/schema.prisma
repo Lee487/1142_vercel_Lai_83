@@ -1,0 +1,21 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Get a free hosted Postgres database in seconds: `npx create-db`
+
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["driverAdapters"]
+  output          = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+  // 注意：使用 Driver Adapter 時不在此處寫 url，避免編譯錯誤 P1012
+}
+
+model User_83 {
+  id    Int     @id @default(autoincrement())
+  name  String?
+  email String  @unique
+}

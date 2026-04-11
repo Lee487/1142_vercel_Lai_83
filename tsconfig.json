@@ -29,6 +29,6 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
     "**/*.mts"
-  ],
+, "src/app/grocery_83/_components/Items_xx.jsx", "src/app/grocery_83/_components/Form_xx.jsx", "src/app/_assets/wrapper/Blog2_xx.jsx", "src/app/_assets/wrapper/Grocery_xx.jsx", "src/app/_assets/wrapper/Navbar_xx.jsx"  ],
   "exclude": ["node_modules"]
 }

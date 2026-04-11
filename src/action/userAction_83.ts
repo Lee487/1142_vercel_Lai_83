@@ -1,22 +1,25 @@
 'use server'
 
-import {prisma} from '@/lib/prisma';
+import { prisma } from '@/lib/prisma';
 import { revalidatePath } from 'next/cache';
 
 export const fetchUsers = async () => {
-    const users = await prisma.user.findMany();
-    return users;
+    try {
+        // 必須與 schema 中的 model 名稱 User_83 完全一致
+        const users = await prisma.user_83.findMany();
+        return users;
+    } catch (error) {
+        console.error('Build 期間資料庫連線跳過或失敗:', error);
+        return []; 
+    }
 };
 
 export const createUser = async (formData: FormData) => {
     const name = formData.get('name') as string;
     const email = formData.get('email') as string;
-    const newuser = {name,email,};
-    console.log('newuser',newuser);
-
-    try{
-        const result = await prisma.user.create({
-            data: newuser,
+    try {
+        await prisma.user_83.create({
+            data: { name, email },
         });
         revalidatePath('/users_db_83');
     } catch (error) {
@@ -24,15 +27,13 @@ export const createUser = async (formData: FormData) => {
     }
 };
 
-export const createUser2 = async (prevState: any,formData: FormData) => {
+// 補上 Form2_83 需要的 createUser2
+export const createUser2 = async (prevState: any, formData: FormData) => {
     const name = formData.get('name') as string;
     const email = formData.get('email') as string;
-    const newuser = {name,email,};
-    console.log('newuser',newuser);
-
-    try{
-        const result = await prisma.user.create({
-            data: newuser,
+    try {
+        await prisma.user_83.create({
+            data: { name, email },
         });
         revalidatePath('/users_db_83');
         return 'user created successfully';
@@ -42,9 +43,11 @@ export const createUser2 = async (prevState: any,formData: FormData) => {
     }
 };
 
-export const removeUser = async (id: number,formData: FormData) => {
-    console.log('id',id);
-    await prisma.user.delete({where: {id,},});
-    revalidatePath('/users_db_83');
-};  
-
+export const removeUser = async (id: number) => {
+    try {
+        await prisma.user_83.delete({ where: { id } });
+        revalidatePath('/users_db_83');
+    } catch (error) {
+        console.error('Error removing user:', error);
+    }
+};
