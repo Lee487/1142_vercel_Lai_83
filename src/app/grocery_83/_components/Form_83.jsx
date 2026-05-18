@@ -1,9 +1,7 @@
-'use client';
-
 import { useState } from 'react';
 import { toast } from 'react-toastify';
 
-const Form_xx = ({ addItem }) => {
+const Form_83 = ({ addItem }) => {
   const [newItemName, setNewItemName] = useState('');
 
   const handleSubmit = (e) => {
@@ -18,19 +16,19 @@ const Form_xx = ({ addItem }) => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <h4>grocery bud</h4>
+      <h4 className='text-2xl font-semibold mb-4 text-center'>Grocery Bud</h4>
       <div className='form-control'>
         <input
-          type='text '
+          type='text'
           className='form-input'
           value={newItemName}
           onChange={(event) => setNewItemName(event.target.value)}
         />
-        <button type='submit' className='btn'>
-          add item
+        <button type='submit' className='btn' style={{ background: '#06b6d4' }}>
+          Add Item
         </button>
       </div>
     </form>
   );
 };
-export default Form_xx;
+export default Form_83;

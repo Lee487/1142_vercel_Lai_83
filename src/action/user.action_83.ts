@@ -5,8 +5,7 @@ import { revalidatePath } from 'next/cache';
 
 export const fetchUsers = async () => {
     try {
-        // 必須與 schema 中的 model 名稱 User_83 完全一致
-        const users = await prisma.user_83.findMany();
+        const users = await prisma.user.findMany();
         return users;
     } catch (error) {
         console.error('Build 期間資料庫連線跳過或失敗:', error);
@@ -18,7 +17,7 @@ export const createUser = async (formData: FormData) => {
     const name = formData.get('name') as string;
     const email = formData.get('email') as string;
     try {
-        await prisma.user_83.create({
+        await prisma.user.create({
             data: { name, email },
         });
         revalidatePath('/users_db_83');
@@ -32,7 +31,7 @@ export const createUser2 = async (prevState: any, formData: FormData) => {
     const name = formData.get('name') as string;
     const email = formData.get('email') as string;
     try {
-        await prisma.user_83.create({
+        await prisma.user.create({
             data: { name, email },
         });
         revalidatePath('/users_db_83');
@@ -45,7 +44,7 @@ export const createUser2 = async (prevState: any, formData: FormData) => {
 
 export const removeUser = async (id: number) => {
     try {
-        await prisma.user_83.delete({ where: { id } });
+        await prisma.user.delete({ where: { id } });
         revalidatePath('/users_db_83');
     } catch (error) {
         console.error('Error removing user:', error);

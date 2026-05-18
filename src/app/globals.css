@@ -1,8 +1,25 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
+/* Color system and theme variables */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  color-scheme: light;
+  --background: #fefce8; /* warm cream */
+  --foreground: #0f172a; /* slate-900 */
+  --accent: #f59e0b; /* amber-500 */
+  --surface: #ffffff;
+  --surface-muted: #f8fafc;
+  --radius: 0.5rem;
+  --card-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+}
+
+html.dark {
+  color-scheme: dark;
+  --background: #0f172a;
+  --foreground: #f8fafc;
+  --accent: #f59e0b;
+  --surface: #0b1220;
+  --surface-muted: #071024;
+  --card-shadow: 0 6px 18px rgba(2,6,23,0.6);
 }
 
 @theme inline {
@@ -12,15 +29,105 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* Global base styles */
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Helvetica', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.18s linear, color 0.18s linear;
 }
+
+* { box-sizing: border-box; }
+
+/* App container used by layout */
+.app-container,
+main {
+  max-width: 72rem; /* ~1152px */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Header / Navbar refinements */
+header {
+  backdrop-filter: blur(6px);
+}
+
+.site-brand {
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--radius);
+  background: var(--accent);
+  color: white;
+  font-weight: 600;
+  box-shadow: none;
+  transition: transform .12s ease, box-shadow .12s ease, opacity .12s ease;
+}
+.btn:hover { transform: translateY(-1px); }
+.btn[aria-pressed='true'] { opacity: 0.9; }
+
+/* Cards */
+.card {
+  background: var(--surface);
+  border-radius: calc(var(--radius) - 0.125rem);
+  box-shadow: var(--card-shadow);
+  padding: 1rem;
+  border: 1px solid rgba(15,23,42,0.04);
+}
+
+/* Forms */
+.form-input,
+.form-textarea,
+.form-select {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(15,23,42,0.08);
+  background: var(--surface);
+  color: var(--foreground);
+}
+
+/* Utility for muted surface */
+.surface-muted {
+  background: var(--surface-muted);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+/* Small helpers */
+.muted { color: rgba(15,23,42,0.6); }
+.kbd { font-family: var(--font-mono); background:#111827; color:#fff; padding: .08rem .3rem; border-radius: .25rem; font-size: .85rem }
+
+/* Keep all color/typography transitions smooth */
+* { transition: background-color .18s linear, color .18s linear, border-color .18s linear; }
+
+/* Button variants */
+.btn-danger {
+  background: #ef4444; /* red-500 */
+}
+.btn-danger:hover { background: #dc2626; }
+
+.btn-ghost {
+  background: transparent;
+  color: var(--foreground);
+  border: 1px solid rgba(15,23,42,0.08);
+}
+
+/* List and item styles */
+.items { display: flex; flex-direction: column; gap: 0.6rem; }
+.single-item { display: flex; align-items: center; gap: 0.75rem; padding: 0.6rem; border-radius: 0.5rem; background: transparent; }
+.single-item p { margin: 0; flex: 1; }
+.single-item input[type='checkbox'] { width: 1.1rem; height: 1.1rem; }
+
+

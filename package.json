@@ -4,7 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "next dev",
+    "predev": "npx kill-port 3000 3001 || true && rm -f .next/dev/lock || true",
+    "dev": "cross-env NEXT_DISABLE_TURBOPACK=1 next dev",
     "build": "next build",
     "start": "next start",
     "lint": "eslint"
@@ -30,8 +31,10 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "babel-plugin-react-compiler": "1.0.0",
+    "cross-env": "^10.1.0",
     "eslint": "^9",
     "eslint-config-next": "16.1.6",
+    "kill-port": "^2.0.1",
     "prisma": "^7.5.0",
     "tailwindcss": "^4.2.2",
     "tsx": "^4.21.0",

@@ -1,11 +1,11 @@
-import SingleItem from './SingleItem_xx';
+import SingleItem_83 from './SingleItem_83';
 
-const Items = ({ items, removeItem, editItem }) => {
+const Items_83 = ({ items, removeItem, editItem }) => {
   return (
     <div className='items'>
       {items.map((item) => {
         return (
-          <SingleItem
+          <SingleItem_83
             key={item.id}
             item={item}
             removeItem={removeItem}
@@ -16,4 +16,4 @@ const Items = ({ items, removeItem, editItem }) => {
     </div>
   );
 };
-export default Items;
+export default Items_83;

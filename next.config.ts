@@ -2,16 +2,24 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   /* config options here */
-  reactCompiler: true,
+  compiler: {
+    styledComponents: true,
+  },
   images: {
-   remotePatterns: [
-    {
-      protocol: 'https',
-      hostname: 'www.course-api.com',
-      port: '',
-      pathname: '/images/**',
-    },
-   ],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'www.course-api.com',
+        port: '',
+        pathname: '/images/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'erogcveccbzsyhbgputf.supabase.co',
+        port: '',
+        pathname: '/storage/v1/object/public/**',
+      },
+    ],
   },
 };
 

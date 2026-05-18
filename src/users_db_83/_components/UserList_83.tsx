@@ -1,4 +1,4 @@
-import { fetchUsers } from "@/action/userAction_83";
+import { fetchUsers } from "@/action/user.action_83";
 
 export const dynamic = 'force-dynamic';
 

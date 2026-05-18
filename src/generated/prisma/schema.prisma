@@ -14,8 +14,22 @@ datasource db {
   // 注意：使用 Driver Adapter 時不在此處寫 url，避免編譯錯誤 P1012
 }
 
-model User_83 {
+model User {
   id    Int     @id @default(autoincrement())
   name  String?
   email String  @unique
+}
+
+model Grocery {
+  id        String  @id @default(cuid())
+  name      String
+  completed Boolean @default(false)
+}
+
+model Blog {
+  id       String @id @default(cuid())
+  title    String
+  descrip  String
+  category String
+  img      String
 }

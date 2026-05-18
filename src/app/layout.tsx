@@ -1,21 +1,22 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-import Navbar_83 from "../components/Navbar_83";
+import type { Metadata } from 'next';
+import { Geist, Geist_Mono } from 'next/font/google';
+import './globals.css';
+import Navbar_83 from '../components/Navbar_83';
+import { ThemeProvider } from '../components/ThemeProvider';
 
 const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+  variable: '--font-geist-sans',
+  subsets: ['latin'],
 });
 
 const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  variable: '--font-geist-mono',
+  subsets: ['latin'],
 });
 
 export const metadata: Metadata = {
-  title: "Next.js Installation",
-  description: "Given for basic understanding of Next.js",
+  title: 'TKUdemo_83',
+  description: 'A demo app with styled navigation and theme toggling',
 };
 
 export default function RootLayout({
@@ -24,12 +25,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang='en'>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} min-h-screen bg-slate-50 text-slate-900 transition-colors duration-200 dark:bg-slate-950 dark:text-slate-100 antialiased`}
       >
-        <Navbar_83 />
-        <main className="max-w-3xl mx-auto py-4">{children}</main>
+        <ThemeProvider>
+          <Navbar_83 />
+          <main className='max-w-3xl mx-auto py-4'>{children}</main>
+        </ThemeProvider>
       </body>
     </html>
   );
