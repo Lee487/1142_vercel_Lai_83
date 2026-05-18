@@ -6,7 +6,7 @@ const BlogDbPage_83 = async () => {
     <section className='py-8'>
       <div className='section-title mb-8'>
         <h2 className='text-2xl text-center border-2 border-red-500 p-2 uppercase'>
-          Blogs From Local PostgreSQL -- Htchung, 123456789
+          Blogs From Local PostgreSQL -- Lai, 213410383
         </h2>
       </div>
       <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8'>
