@@ -11,10 +11,10 @@ const BlogPage_83 = async () => {
       </div>
       <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8'>
         {blogs.map((blog) => {
-          const { id, title, descrip, category, remote_url } = blog;
+          const { id, title, descrip, category, img } = blog;
           return (
             <article key={id} className='bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden transition-transform hover:scale-105'>
-              <img src={remote_url} alt={title} className='w-full h-48 object-cover' />
+              <img src={img} alt={title} className='w-full h-48 object-cover' />
               <div className='p-4'>
                 <div className='flex items-center space-x-2 text-blue-500 uppercase text-xs font-bold mb-2'>
                   <span>{category}</span>
