@@ -5,8 +5,6 @@
 
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
-// Get a free hosted Postgres database in seconds: `npx create-db`
-
 generator client {
   provider        = "prisma-client-js"
   previewFeatures = ["driverAdapters"]
@@ -15,7 +13,12 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  // 注意：使用 Driver Adapter 時不在此處寫 url，避免編譯錯誤 P1012
+}
+
+model User {
+  id    Int     @id @default(autoincrement())
+  name  String?
+  email String  @unique
 }
 
 model User {
@@ -30,6 +33,7 @@ model Grocery {
   completed Boolean @default(false)
 }
 
+<<<<<<< HEAD
 model Blog {
   id       String @id @default(cuid())
   title    String
@@ -37,3 +41,20 @@ model Blog {
   category String
   img      String
 }
+=======
+model Category_xx {
+  cid       Int     @id @default(autoincrement())
+  cname     String
+  size      String?
+  image_url String?
+}
+
+model Shop_xx {
+  pid            Int     @id @default(autoincrement())
+  pname          String?
+  cat_id         Int?
+  price          Float?
+  img_url        String?
+  remote_img_url String?
+}
+>>>>>>> 50d49ef (1234)

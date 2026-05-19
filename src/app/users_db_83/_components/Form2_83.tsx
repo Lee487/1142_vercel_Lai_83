@@ -1,6 +1,11 @@
 'use client';
+<<<<<<< HEAD
 import { createUser2 } from '@/action/user.action_83';
 import { useFormStatus, useFormState } from 'react-dom';
+=======
+import {createUser2} from '@/action/user.action_83';
+import { use } from 'react';
+>>>>>>> 50d49ef (1234)
 
 const SubmitButton = () => {
   const { pending } = useFormStatus();

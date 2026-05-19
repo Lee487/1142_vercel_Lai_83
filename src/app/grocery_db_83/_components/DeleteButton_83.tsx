@@ -9,9 +9,15 @@ const DeleteButton_83 = ({ id }: { id: string }) => {
         <form action={removeGroceryWithId}>
             <button 
                 type="submit" 
+<<<<<<< HEAD
                 className="btn btn-danger"
             >
                 Delete
+=======
+                className="btn remove-btn"
+            >
+                delete
+>>>>>>> 50d49ef (1234)
             </button>
         </form>
     );

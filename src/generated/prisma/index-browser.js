@@ -121,6 +121,15 @@ exports.Prisma.TransactionIsolationLevel = makeStrictEnum({
 });
 
 exports.Prisma.UserScalarFieldEnum = {
+<<<<<<< HEAD
+=======
+  id: 'id',
+  name: 'name',
+  email: 'email'
+};
+
+exports.Prisma.User_83ScalarFieldEnum = {
+>>>>>>> 50d49ef (1234)
   id: 'id',
   name: 'name',
   email: 'email'
@@ -132,12 +141,29 @@ exports.Prisma.GroceryScalarFieldEnum = {
   completed: 'completed'
 };
 
+<<<<<<< HEAD
 exports.Prisma.BlogScalarFieldEnum = {
   id: 'id',
   title: 'title',
   descrip: 'descrip',
   category: 'category',
   img: 'img'
+=======
+exports.Prisma.Category_xxScalarFieldEnum = {
+  cid: 'cid',
+  cname: 'cname',
+  size: 'size',
+  image_url: 'image_url'
+};
+
+exports.Prisma.Shop_xxScalarFieldEnum = {
+  pid: 'pid',
+  pname: 'pname',
+  cat_id: 'cat_id',
+  price: 'price',
+  img_url: 'img_url',
+  remote_img_url: 'remote_img_url'
+>>>>>>> 50d49ef (1234)
 };
 
 exports.Prisma.SortOrder = {
@@ -158,8 +184,15 @@ exports.Prisma.NullsOrder = {
 
 exports.Prisma.ModelName = {
   User: 'User',
+<<<<<<< HEAD
   Grocery: 'Grocery',
   Blog: 'Blog'
+=======
+  User_83: 'User_83',
+  Grocery: 'Grocery',
+  Category_xx: 'Category_xx',
+  Shop_xx: 'Shop_xx'
+>>>>>>> 50d49ef (1234)
 };
 
 /**
