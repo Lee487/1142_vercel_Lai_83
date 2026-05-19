@@ -6,7 +6,7 @@ import { nanoid } from 'nanoid';
 import Items from './_components/Items_83';
 import { ToastContainer, toast } from 'react-toastify';
 
-import Wrapper from '../_assets/wrapper/Grocery_xx';
+import Wrapper from '../../_assets/wrapper/Grocery_xx';
 
 const getLocalStorage = () => {
   if (typeof window !== 'undefined') {
