@@ -26,13 +26,13 @@ const FetchProductsByCategory_xx = () => {
 
   useEffect(() => {
     fetchProductsFromNode();
-  }, []);
+  }, [cat]);
 
   return (
     <Wrapper>
       <div className='shop-page'>
         <div className='section-title'>
-          <h4> Hsingtai Chung, 123456789 </h4>
+          <h4> Lai, 213410383 </h4>
         </div>
         <div className='collection-page'>
           <h1 className='title capitalize'>{cat}</h1>

@@ -31,7 +31,7 @@ const GroceryPage_83 = () => {
   useEffect(() => {
     const storedList = getLocalStorage();
     if (storedList.length > 0) {
-      setItems(storedList);
+      setTimeout(() => setItems(storedList), 0);
     }
   }, []);
 

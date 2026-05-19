@@ -6,7 +6,7 @@ const StaticPage_xx = () => {
       <div className='shop-page'>
         <div className='section-title'>
           <h3> P1_StaticPage_xx, </h3>
-          <h4 className='text-center'> Hsingtai Chung, 123456789 </h4>
+          <h4 className='text-center'> Lai, 213410383 </h4>
         </div>
         <div className='collection-page'>
           <h1 className='title'>Womens</h1>

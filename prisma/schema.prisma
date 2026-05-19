@@ -1,8 +1,4 @@
-
-
 // This is your Prisma schema file,
-
-
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
 generator client {
@@ -21,7 +17,7 @@ model User {
   email String  @unique
 }
 
-model User {
+model User_83 {
   id    Int     @id @default(autoincrement())
   name  String?
   email String  @unique
@@ -33,20 +29,19 @@ model Grocery {
   completed Boolean @default(false)
 }
 
-<<<<<<< HEAD
+model Category_xx {
+  cid       Int     @id @default(autoincrement())
+  cname     String
+  size      String?
+  image_url String?
+}
+
 model Blog {
   id       String @id @default(cuid())
   title    String
   descrip  String
   category String
   img      String
-}
-=======
-model Category_xx {
-  cid       Int     @id @default(autoincrement())
-  cname     String
-  size      String?
-  image_url String?
 }
 
 model Shop_xx {
@@ -57,4 +52,3 @@ model Shop_xx {
   img_url        String?
   remote_img_url String?
 }
->>>>>>> 50d49ef (1234)

@@ -20,7 +20,7 @@ const StaticPage_xx = async () => {
     <Wrapper>
       <div className='max-w-4xl mx-auto shop-page'>
         <div className='section-title'>
-          <h4> Hsingtai Chung, 123456789 </h4>
+          <h4> Lai, 213410383 </h4>
         </div>
         <div className='homepage'>
           <div className='directory-menu'>

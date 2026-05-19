@@ -27,7 +27,7 @@ export const createUser = async (formData: FormData) => {
 };
 
 // 補上 Form2_83 需要的 createUser2
-export const createUser2 = async (prevState: any, formData: FormData) => {
+export const createUser2 = async (prevState: string | null, formData: FormData) => {
     const name = formData.get('name') as string;
     const email = formData.get('email') as string;
     try {

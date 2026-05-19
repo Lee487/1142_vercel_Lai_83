@@ -39,7 +39,7 @@ const FetchProductsByCategory_xx = async ({
       <Wrapper>
         <div className='shop-page'>
           <div className='section-title'>
-            <h4> Hsingtai Chung, 123456789 </h4>
+            <h4> Lai, 213410383 </h4>
           </div>
           <div className='collection-page'>
             <h1 className='title'>{category}</h1>
@@ -52,6 +52,7 @@ const FetchProductsByCategory_xx = async ({
                     pid={pid}
                     img_url={img_url}
                     pname={pname}
+                    name={pname}
                     price={price}
                   />
                 );
