@@ -3,6 +3,8 @@ import Link from 'next/link';
 
 import { prisma } from '@/lib/prisma';
 
+export const dynamic = 'force-dynamic';
+
 const fetchCategory_xx = async () => {
   try {
     const categories = await prisma.category_xx.findMany();
