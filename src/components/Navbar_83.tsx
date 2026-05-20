@@ -54,7 +54,7 @@ const Navbar_83 = () => {
           <MenubarTrigger>Midterm</MenubarTrigger>
           <MenubarContent>
             <MenubarItem>
-              <Link href='/mid_xx'>Mid_xx</Link>
+              <Link href='/mid_83'>Mid_83</Link>
             </MenubarItem>
           </MenubarContent>
         </MenubarMenu>
@@ -62,7 +62,7 @@ const Navbar_83 = () => {
           <MenubarTrigger>Quiz2</MenubarTrigger>
           <MenubarContent>
             <MenubarItem>
-              <Link href='/store_xx'>Store_xx</Link>
+              <Link href='/store_83'>Store_83</Link>
             </MenubarItem>
           </MenubarContent>
         </MenubarMenu>

@@ -138,7 +138,7 @@ exports.Prisma.GroceryScalarFieldEnum = {
   completed: 'completed'
 };
 
-exports.Prisma.Category_xxScalarFieldEnum = {
+exports.Prisma.Category_83ScalarFieldEnum = {
   cid: 'cid',
   cname: 'cname',
   size: 'size',
@@ -153,7 +153,7 @@ exports.Prisma.BlogScalarFieldEnum = {
   img: 'img'
 };
 
-exports.Prisma.Shop_xxScalarFieldEnum = {
+exports.Prisma.Shop_83ScalarFieldEnum = {
   pid: 'pid',
   pname: 'pname',
   cat_id: 'cat_id',
@@ -182,9 +182,9 @@ exports.Prisma.ModelName = {
   User: 'User',
   User_83: 'User_83',
   Grocery: 'Grocery',
-  Category_xx: 'Category_xx',
+  Category_83: 'Category_83',
   Blog: 'Blog',
-  Shop_xx: 'Shop_xx'
+  Shop_83: 'Shop_83'
 };
 
 /**

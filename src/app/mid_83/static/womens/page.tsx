@@ -1,11 +1,11 @@
-import Wrapper from '../../_assets/wrappers/Shop_xx';
+import Wrapper from '../../_assets/wrappers/Shop_83';
 
-const StaticPage_xx = () => {
+const StaticPage_83 = () => {
   return (
     <Wrapper>
       <div className='shop-page'>
         <div className='section-title'>
-          <h3> P1_StaticPage_xx, </h3>
+          <h3> P1_StaticPage_83, </h3>
           <h4 className='text-center'> Lai, 213410383 </h4>
         </div>
         <div className='collection-page'>
@@ -95,4 +95,4 @@ const StaticPage_xx = () => {
   );
 };
 
-export default StaticPage_xx;
+export default StaticPage_83;

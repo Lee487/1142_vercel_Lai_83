@@ -1,11 +1,11 @@
-import Form_83 from './_components/Form_xx';
-import Items_83 from './_components/Items_xx';
+import Form_83 from './_components/Form_83';
+import Items_83 from './_components/Items_83';
 import { ToastContainer } from 'react-toastify';
-import Wrapper from '../../_assets/wrapper/Grocery_xx';
+import Wrapper from '../../_assets/wrapper/Grocery_83';
 import { fetchGroceries } from '@/action/grocery.action_83';
 
 // 加上 async
-const GroceryPage_xx = async () => {
+const GroceryPage_83 = async () => {
   // 在這裡抓資料
   const items = await fetchGroceries();
 
@@ -21,4 +21,4 @@ const GroceryPage_xx = async () => {
   );
 };
 
-export default GroceryPage_xx;
+export default GroceryPage_83;

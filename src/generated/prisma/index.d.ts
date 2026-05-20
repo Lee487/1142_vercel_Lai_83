@@ -29,20 +29,20 @@ export type User_83 = $Result.DefaultSelection<Prisma.$User_83Payload>
  */
 export type Grocery = $Result.DefaultSelection<Prisma.$GroceryPayload>
 /**
- * Model Category_xx
+ * Model Category_83
  * 
  */
-export type Category_xx = $Result.DefaultSelection<Prisma.$Category_xxPayload>
+export type Category_83 = $Result.DefaultSelection<Prisma.$Category_83Payload>
 /**
  * Model Blog
  * 
  */
 export type Blog = $Result.DefaultSelection<Prisma.$BlogPayload>
 /**
- * Model Shop_xx
+ * Model Shop_83
  * 
  */
-export type Shop_xx = $Result.DefaultSelection<Prisma.$Shop_xxPayload>
+export type Shop_83 = $Result.DefaultSelection<Prisma.$Shop_83Payload>
 
 /**
  * ##  Prisma Client ʲˢ
@@ -196,14 +196,14 @@ export class PrismaClient<
   get grocery(): Prisma.GroceryDelegate<ExtArgs, ClientOptions>;
 
   /**
-   * `prisma.category_xx`: Exposes CRUD operations for the **Category_xx** model.
+   * `prisma.category_83`: Exposes CRUD operations for the **Category_83** model.
     * Example usage:
     * ```ts
-    * // Fetch zero or more Category_xxes
-    * const category_xxes = await prisma.category_xx.findMany()
+    * // Fetch zero or more Category_83s
+    * const category_83s = await prisma.category_83.findMany()
     * ```
     */
-  get category_xx(): Prisma.Category_xxDelegate<ExtArgs, ClientOptions>;
+  get category_83(): Prisma.Category_83Delegate<ExtArgs, ClientOptions>;
 
   /**
    * `prisma.blog`: Exposes CRUD operations for the **Blog** model.
@@ -216,14 +216,14 @@ export class PrismaClient<
   get blog(): Prisma.BlogDelegate<ExtArgs, ClientOptions>;
 
   /**
-   * `prisma.shop_xx`: Exposes CRUD operations for the **Shop_xx** model.
+   * `prisma.shop_83`: Exposes CRUD operations for the **Shop_83** model.
     * Example usage:
     * ```ts
-    * // Fetch zero or more Shop_xxes
-    * const shop_xxes = await prisma.shop_xx.findMany()
+    * // Fetch zero or more Shop_83s
+    * const shop_83s = await prisma.shop_83.findMany()
     * ```
     */
-  get shop_xx(): Prisma.Shop_xxDelegate<ExtArgs, ClientOptions>;
+  get shop_83(): Prisma.Shop_83Delegate<ExtArgs, ClientOptions>;
 }
 
 export namespace Prisma {
@@ -661,9 +661,9 @@ export namespace Prisma {
     User: 'User',
     User_83: 'User_83',
     Grocery: 'Grocery',
-    Category_xx: 'Category_xx',
+    Category_83: 'Category_83',
     Blog: 'Blog',
-    Shop_xx: 'Shop_xx'
+    Shop_83: 'Shop_83'
   };
 
   export type ModelName = (typeof ModelName)[keyof typeof ModelName]
@@ -679,7 +679,7 @@ export namespace Prisma {
       omit: GlobalOmitOptions
     }
     meta: {
-      modelProps: "user" | "user_83" | "grocery" | "category_xx" | "blog" | "shop_xx"
+      modelProps: "user" | "user_83" | "grocery" | "category_83" | "blog" | "shop_83"
       txIsolationLevel: Prisma.TransactionIsolationLevel
     }
     model: {
@@ -905,77 +905,77 @@ export namespace Prisma {
           }
         }
       }
-      Category_xx: {
-        payload: Prisma.$Category_xxPayload<ExtArgs>
-        fields: Prisma.Category_xxFieldRefs
+      Category_83: {
+        payload: Prisma.$Category_83Payload<ExtArgs>
+        fields: Prisma.Category_83FieldRefs
         operations: {
           findUnique: {
-            args: Prisma.Category_xxFindUniqueArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$Category_xxPayload> | null
+            args: Prisma.Category_83FindUniqueArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$Category_83Payload> | null
           }
           findUniqueOrThrow: {
-            args: Prisma.Category_xxFindUniqueOrThrowArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$Category_xxPayload>
+            args: Prisma.Category_83FindUniqueOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$Category_83Payload>
           }
           findFirst: {
-            args: Prisma.Category_xxFindFirstArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$Category_xxPayload> | null
+            args: Prisma.Category_83FindFirstArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$Category_83Payload> | null
           }
           findFirstOrThrow: {
-            args: Prisma.Category_xxFindFirstOrThrowArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$Category_xxPayload>
+            args: Prisma.Category_83FindFirstOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$Category_83Payload>
           }
           findMany: {
-            args: Prisma.Category_xxFindManyArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$Category_xxPayload>[]
+            args: Prisma.Category_83FindManyArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$Category_83Payload>[]
           }
           create: {
-            args: Prisma.Category_xxCreateArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$Category_xxPayload>
+            args: Prisma.Category_83CreateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$Category_83Payload>
           }
           createMany: {
-            args: Prisma.Category_xxCreateManyArgs<ExtArgs>
+            args: Prisma.Category_83CreateManyArgs<ExtArgs>
             result: BatchPayload
           }
           createManyAndReturn: {
-            args: Prisma.Category_xxCreateManyAndReturnArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$Category_xxPayload>[]
+            args: Prisma.Category_83CreateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$Category_83Payload>[]
           }
           delete: {
-            args: Prisma.Category_xxDeleteArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$Category_xxPayload>
+            args: Prisma.Category_83DeleteArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$Category_83Payload>
           }
           update: {
-            args: Prisma.Category_xxUpdateArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$Category_xxPayload>
+            args: Prisma.Category_83UpdateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$Category_83Payload>
           }
           deleteMany: {
-            args: Prisma.Category_xxDeleteManyArgs<ExtArgs>
+            args: Prisma.Category_83DeleteManyArgs<ExtArgs>
             result: BatchPayload
           }
           updateMany: {
-            args: Prisma.Category_xxUpdateManyArgs<ExtArgs>
+            args: Prisma.Category_83UpdateManyArgs<ExtArgs>
             result: BatchPayload
           }
           updateManyAndReturn: {
-            args: Prisma.Category_xxUpdateManyAndReturnArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$Category_xxPayload>[]
+            args: Prisma.Category_83UpdateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$Category_83Payload>[]
           }
           upsert: {
-            args: Prisma.Category_xxUpsertArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$Category_xxPayload>
+            args: Prisma.Category_83UpsertArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$Category_83Payload>
           }
           aggregate: {
-            args: Prisma.Category_xxAggregateArgs<ExtArgs>
-            result: $Utils.Optional<AggregateCategory_xx>
+            args: Prisma.Category_83AggregateArgs<ExtArgs>
+            result: $Utils.Optional<AggregateCategory_83>
           }
           groupBy: {
-            args: Prisma.Category_xxGroupByArgs<ExtArgs>
-            result: $Utils.Optional<Category_xxGroupByOutputType>[]
+            args: Prisma.Category_83GroupByArgs<ExtArgs>
+            result: $Utils.Optional<Category_83GroupByOutputType>[]
           }
           count: {
-            args: Prisma.Category_xxCountArgs<ExtArgs>
-            result: $Utils.Optional<Category_xxCountAggregateOutputType> | number
+            args: Prisma.Category_83CountArgs<ExtArgs>
+            result: $Utils.Optional<Category_83CountAggregateOutputType> | number
           }
         }
       }
@@ -1053,77 +1053,77 @@ export namespace Prisma {
           }
         }
       }
-      Shop_xx: {
-        payload: Prisma.$Shop_xxPayload<ExtArgs>
-        fields: Prisma.Shop_xxFieldRefs
+      Shop_83: {
+        payload: Prisma.$Shop_83Payload<ExtArgs>
+        fields: Prisma.Shop_83FieldRefs
         operations: {
           findUnique: {
-            args: Prisma.Shop_xxFindUniqueArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$Shop_xxPayload> | null
+            args: Prisma.Shop_83FindUniqueArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$Shop_83Payload> | null
           }
           findUniqueOrThrow: {
-            args: Prisma.Shop_xxFindUniqueOrThrowArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$Shop_xxPayload>
+            args: Prisma.Shop_83FindUniqueOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$Shop_83Payload>
           }
           findFirst: {
-            args: Prisma.Shop_xxFindFirstArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$Shop_xxPayload> | null
+            args: Prisma.Shop_83FindFirstArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$Shop_83Payload> | null
           }
           findFirstOrThrow: {
-            args: Prisma.Shop_xxFindFirstOrThrowArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$Shop_xxPayload>
+            args: Prisma.Shop_83FindFirstOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$Shop_83Payload>
           }
           findMany: {
-            args: Prisma.Shop_xxFindManyArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$Shop_xxPayload>[]
+            args: Prisma.Shop_83FindManyArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$Shop_83Payload>[]
           }
           create: {
-            args: Prisma.Shop_xxCreateArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$Shop_xxPayload>
+            args: Prisma.Shop_83CreateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$Shop_83Payload>
           }
           createMany: {
-            args: Prisma.Shop_xxCreateManyArgs<ExtArgs>
+            args: Prisma.Shop_83CreateManyArgs<ExtArgs>
             result: BatchPayload
           }
           createManyAndReturn: {
-            args: Prisma.Shop_xxCreateManyAndReturnArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$Shop_xxPayload>[]
+            args: Prisma.Shop_83CreateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$Shop_83Payload>[]
           }
           delete: {
-            args: Prisma.Shop_xxDeleteArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$Shop_xxPayload>
+            args: Prisma.Shop_83DeleteArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$Shop_83Payload>
           }
           update: {
-            args: Prisma.Shop_xxUpdateArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$Shop_xxPayload>
+            args: Prisma.Shop_83UpdateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$Shop_83Payload>
           }
           deleteMany: {
-            args: Prisma.Shop_xxDeleteManyArgs<ExtArgs>
+            args: Prisma.Shop_83DeleteManyArgs<ExtArgs>
             result: BatchPayload
           }
           updateMany: {
-            args: Prisma.Shop_xxUpdateManyArgs<ExtArgs>
+            args: Prisma.Shop_83UpdateManyArgs<ExtArgs>
             result: BatchPayload
           }
           updateManyAndReturn: {
-            args: Prisma.Shop_xxUpdateManyAndReturnArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$Shop_xxPayload>[]
+            args: Prisma.Shop_83UpdateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$Shop_83Payload>[]
           }
           upsert: {
-            args: Prisma.Shop_xxUpsertArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$Shop_xxPayload>
+            args: Prisma.Shop_83UpsertArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$Shop_83Payload>
           }
           aggregate: {
-            args: Prisma.Shop_xxAggregateArgs<ExtArgs>
-            result: $Utils.Optional<AggregateShop_xx>
+            args: Prisma.Shop_83AggregateArgs<ExtArgs>
+            result: $Utils.Optional<AggregateShop_83>
           }
           groupBy: {
-            args: Prisma.Shop_xxGroupByArgs<ExtArgs>
-            result: $Utils.Optional<Shop_xxGroupByOutputType>[]
+            args: Prisma.Shop_83GroupByArgs<ExtArgs>
+            result: $Utils.Optional<Shop_83GroupByOutputType>[]
           }
           count: {
-            args: Prisma.Shop_xxCountArgs<ExtArgs>
-            result: $Utils.Optional<Shop_xxCountAggregateOutputType> | number
+            args: Prisma.Shop_83CountArgs<ExtArgs>
+            result: $Utils.Optional<Shop_83CountAggregateOutputType> | number
           }
         }
       }
@@ -1238,9 +1238,9 @@ export namespace Prisma {
     user?: UserOmit
     user_83?: User_83Omit
     grocery?: GroceryOmit
-    category_xx?: Category_xxOmit
+    category_83?: Category_83Omit
     blog?: BlogOmit
-    shop_xx?: Shop_xxOmit
+    shop_83?: Shop_83Omit
   }
 
   /* Types for Logging */
@@ -4312,40 +4312,40 @@ export namespace Prisma {
 
 
   /**
-   * Model Category_xx
+   * Model Category_83
    */
 
-  export type AggregateCategory_xx = {
-    _count: Category_xxCountAggregateOutputType | null
-    _avg: Category_xxAvgAggregateOutputType | null
-    _sum: Category_xxSumAggregateOutputType | null
-    _min: Category_xxMinAggregateOutputType | null
-    _max: Category_xxMaxAggregateOutputType | null
+  export type AggregateCategory_83 = {
+    _count: Category_83CountAggregateOutputType | null
+    _avg: Category_83AvgAggregateOutputType | null
+    _sum: Category_83SumAggregateOutputType | null
+    _min: Category_83MinAggregateOutputType | null
+    _max: Category_83MaxAggregateOutputType | null
   }
 
-  export type Category_xxAvgAggregateOutputType = {
+  export type Category_83AvgAggregateOutputType = {
     cid: number | null
   }
 
-  export type Category_xxSumAggregateOutputType = {
+  export type Category_83SumAggregateOutputType = {
     cid: number | null
   }
 
-  export type Category_xxMinAggregateOutputType = {
-    cid: number | null
-    cname: string | null
-    size: string | null
-    image_url: string | null
-  }
-
-  export type Category_xxMaxAggregateOutputType = {
+  export type Category_83MinAggregateOutputType = {
     cid: number | null
     cname: string | null
     size: string | null
     image_url: string | null
   }
 
-  export type Category_xxCountAggregateOutputType = {
+  export type Category_83MaxAggregateOutputType = {
+    cid: number | null
+    cname: string | null
+    size: string | null
+    image_url: string | null
+  }
+
+  export type Category_83CountAggregateOutputType = {
     cid: number
     cname: number
     size: number
@@ -4354,29 +4354,29 @@ export namespace Prisma {
   }
 
 
-  export type Category_xxAvgAggregateInputType = {
+  export type Category_83AvgAggregateInputType = {
     cid?: true
   }
 
-  export type Category_xxSumAggregateInputType = {
+  export type Category_83SumAggregateInputType = {
     cid?: true
   }
 
-  export type Category_xxMinAggregateInputType = {
-    cid?: true
-    cname?: true
-    size?: true
-    image_url?: true
-  }
-
-  export type Category_xxMaxAggregateInputType = {
+  export type Category_83MinAggregateInputType = {
     cid?: true
     cname?: true
     size?: true
     image_url?: true
   }
 
-  export type Category_xxCountAggregateInputType = {
+  export type Category_83MaxAggregateInputType = {
+    cid?: true
+    cname?: true
+    size?: true
+    image_url?: true
+  }
+
+  export type Category_83CountAggregateInputType = {
     cid?: true
     cname?: true
     size?: true
@@ -4384,286 +4384,286 @@ export namespace Prisma {
     _all?: true
   }
 
-  export type Category_xxAggregateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type Category_83AggregateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * Filter which Category_xx to aggregate.
+     * Filter which Category_83 to aggregate.
      */
-    where?: Category_xxWhereInput
+    where?: Category_83WhereInput
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
      * 
-     * Determine the order of Category_xxes to fetch.
+     * Determine the order of Category_83s to fetch.
      */
-    orderBy?: Category_xxOrderByWithRelationInput | Category_xxOrderByWithRelationInput[]
+    orderBy?: Category_83OrderByWithRelationInput | Category_83OrderByWithRelationInput[]
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
      * 
      * Sets the start position
      */
-    cursor?: Category_xxWhereUniqueInput
+    cursor?: Category_83WhereUniqueInput
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
      * 
-     * Take `±n` Category_xxes from the position of the cursor.
+     * Take `±n` Category_83s from the position of the cursor.
      */
     take?: number
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
      * 
-     * Skip the first `n` Category_xxes.
+     * Skip the first `n` Category_83s.
      */
     skip?: number
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
      * 
-     * Count returned Category_xxes
+     * Count returned Category_83s
     **/
-    _count?: true | Category_xxCountAggregateInputType
+    _count?: true | Category_83CountAggregateInputType
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
      * 
      * Select which fields to average
     **/
-    _avg?: Category_xxAvgAggregateInputType
+    _avg?: Category_83AvgAggregateInputType
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
      * 
      * Select which fields to sum
     **/
-    _sum?: Category_xxSumAggregateInputType
+    _sum?: Category_83SumAggregateInputType
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
      * 
      * Select which fields to find the minimum value
     **/
-    _min?: Category_xxMinAggregateInputType
+    _min?: Category_83MinAggregateInputType
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
      * 
      * Select which fields to find the maximum value
     **/
-    _max?: Category_xxMaxAggregateInputType
+    _max?: Category_83MaxAggregateInputType
   }
 
-  export type GetCategory_xxAggregateType<T extends Category_xxAggregateArgs> = {
-        [P in keyof T & keyof AggregateCategory_xx]: P extends '_count' | 'count'
+  export type GetCategory_83AggregateType<T extends Category_83AggregateArgs> = {
+        [P in keyof T & keyof AggregateCategory_83]: P extends '_count' | 'count'
       ? T[P] extends true
         ? number
-        : GetScalarType<T[P], AggregateCategory_xx[P]>
-      : GetScalarType<T[P], AggregateCategory_xx[P]>
+        : GetScalarType<T[P], AggregateCategory_83[P]>
+      : GetScalarType<T[P], AggregateCategory_83[P]>
   }
 
 
 
 
-  export type Category_xxGroupByArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    where?: Category_xxWhereInput
-    orderBy?: Category_xxOrderByWithAggregationInput | Category_xxOrderByWithAggregationInput[]
-    by: Category_xxScalarFieldEnum[] | Category_xxScalarFieldEnum
-    having?: Category_xxScalarWhereWithAggregatesInput
+  export type Category_83GroupByArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: Category_83WhereInput
+    orderBy?: Category_83OrderByWithAggregationInput | Category_83OrderByWithAggregationInput[]
+    by: Category_83ScalarFieldEnum[] | Category_83ScalarFieldEnum
+    having?: Category_83ScalarWhereWithAggregatesInput
     take?: number
     skip?: number
-    _count?: Category_xxCountAggregateInputType | true
-    _avg?: Category_xxAvgAggregateInputType
-    _sum?: Category_xxSumAggregateInputType
-    _min?: Category_xxMinAggregateInputType
-    _max?: Category_xxMaxAggregateInputType
+    _count?: Category_83CountAggregateInputType | true
+    _avg?: Category_83AvgAggregateInputType
+    _sum?: Category_83SumAggregateInputType
+    _min?: Category_83MinAggregateInputType
+    _max?: Category_83MaxAggregateInputType
   }
 
-  export type Category_xxGroupByOutputType = {
+  export type Category_83GroupByOutputType = {
     cid: number
     cname: string
     size: string | null
     image_url: string | null
-    _count: Category_xxCountAggregateOutputType | null
-    _avg: Category_xxAvgAggregateOutputType | null
-    _sum: Category_xxSumAggregateOutputType | null
-    _min: Category_xxMinAggregateOutputType | null
-    _max: Category_xxMaxAggregateOutputType | null
+    _count: Category_83CountAggregateOutputType | null
+    _avg: Category_83AvgAggregateOutputType | null
+    _sum: Category_83SumAggregateOutputType | null
+    _min: Category_83MinAggregateOutputType | null
+    _max: Category_83MaxAggregateOutputType | null
   }
 
-  type GetCategory_xxGroupByPayload<T extends Category_xxGroupByArgs> = Prisma.PrismaPromise<
+  type GetCategory_83GroupByPayload<T extends Category_83GroupByArgs> = Prisma.PrismaPromise<
     Array<
-      PickEnumerable<Category_xxGroupByOutputType, T['by']> &
+      PickEnumerable<Category_83GroupByOutputType, T['by']> &
         {
-          [P in ((keyof T) & (keyof Category_xxGroupByOutputType))]: P extends '_count'
+          [P in ((keyof T) & (keyof Category_83GroupByOutputType))]: P extends '_count'
             ? T[P] extends boolean
               ? number
-              : GetScalarType<T[P], Category_xxGroupByOutputType[P]>
-            : GetScalarType<T[P], Category_xxGroupByOutputType[P]>
+              : GetScalarType<T[P], Category_83GroupByOutputType[P]>
+            : GetScalarType<T[P], Category_83GroupByOutputType[P]>
         }
       >
     >
 
 
-  export type Category_xxSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+  export type Category_83Select<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
     cid?: boolean
     cname?: boolean
     size?: boolean
     image_url?: boolean
-  }, ExtArgs["result"]["category_xx"]>
+  }, ExtArgs["result"]["category_83"]>
 
-  export type Category_xxSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+  export type Category_83SelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
     cid?: boolean
     cname?: boolean
     size?: boolean
     image_url?: boolean
-  }, ExtArgs["result"]["category_xx"]>
+  }, ExtArgs["result"]["category_83"]>
 
-  export type Category_xxSelectUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+  export type Category_83SelectUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
     cid?: boolean
     cname?: boolean
     size?: boolean
     image_url?: boolean
-  }, ExtArgs["result"]["category_xx"]>
+  }, ExtArgs["result"]["category_83"]>
 
-  export type Category_xxSelectScalar = {
+  export type Category_83SelectScalar = {
     cid?: boolean
     cname?: boolean
     size?: boolean
     image_url?: boolean
   }
 
-  export type Category_xxOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"cid" | "cname" | "size" | "image_url", ExtArgs["result"]["category_xx"]>
+  export type Category_83Omit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"cid" | "cname" | "size" | "image_url", ExtArgs["result"]["category_83"]>
 
-  export type $Category_xxPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    name: "Category_xx"
+  export type $Category_83Payload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    name: "Category_83"
     objects: {}
     scalars: $Extensions.GetPayloadResult<{
       cid: number
       cname: string
       size: string | null
       image_url: string | null
-    }, ExtArgs["result"]["category_xx"]>
+    }, ExtArgs["result"]["category_83"]>
     composites: {}
   }
 
-  type Category_xxGetPayload<S extends boolean | null | undefined | Category_xxDefaultArgs> = $Result.GetResult<Prisma.$Category_xxPayload, S>
+  type Category_83GetPayload<S extends boolean | null | undefined | Category_83DefaultArgs> = $Result.GetResult<Prisma.$Category_83Payload, S>
 
-  type Category_xxCountArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> =
-    Omit<Category_xxFindManyArgs, 'select' | 'include' | 'distinct' | 'omit'> & {
-      select?: Category_xxCountAggregateInputType | true
+  type Category_83CountArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> =
+    Omit<Category_83FindManyArgs, 'select' | 'include' | 'distinct' | 'omit'> & {
+      select?: Category_83CountAggregateInputType | true
     }
 
-  export interface Category_xxDelegate<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> {
-    [K: symbol]: { types: Prisma.TypeMap<ExtArgs>['model']['Category_xx'], meta: { name: 'Category_xx' } }
+  export interface Category_83Delegate<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> {
+    [K: symbol]: { types: Prisma.TypeMap<ExtArgs>['model']['Category_83'], meta: { name: 'Category_83' } }
     /**
-     * Find zero or one Category_xx that matches the filter.
-     * @param {Category_xxFindUniqueArgs} args - Arguments to find a Category_xx
+     * Find zero or one Category_83 that matches the filter.
+     * @param {Category_83FindUniqueArgs} args - Arguments to find a Category_83
      * @example
-     * // Get one Category_xx
-     * const category_xx = await prisma.category_xx.findUnique({
+     * // Get one Category_83
+     * const category_83 = await prisma.category_83.findUnique({
      *   where: {
      *     // ... provide filter here
      *   }
      * })
      */
-    findUnique<T extends Category_xxFindUniqueArgs>(args: SelectSubset<T, Category_xxFindUniqueArgs<ExtArgs>>): Prisma__Category_xxClient<$Result.GetResult<Prisma.$Category_xxPayload<ExtArgs>, T, "findUnique", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
+    findUnique<T extends Category_83FindUniqueArgs>(args: SelectSubset<T, Category_83FindUniqueArgs<ExtArgs>>): Prisma__Category_83Client<$Result.GetResult<Prisma.$Category_83Payload<ExtArgs>, T, "findUnique", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
 
     /**
-     * Find one Category_xx that matches the filter or throw an error with `error.code='P2025'`
+     * Find one Category_83 that matches the filter or throw an error with `error.code='P2025'`
      * if no matches were found.
-     * @param {Category_xxFindUniqueOrThrowArgs} args - Arguments to find a Category_xx
+     * @param {Category_83FindUniqueOrThrowArgs} args - Arguments to find a Category_83
      * @example
-     * // Get one Category_xx
-     * const category_xx = await prisma.category_xx.findUniqueOrThrow({
+     * // Get one Category_83
+     * const category_83 = await prisma.category_83.findUniqueOrThrow({
      *   where: {
      *     // ... provide filter here
      *   }
      * })
      */
-    findUniqueOrThrow<T extends Category_xxFindUniqueOrThrowArgs>(args: SelectSubset<T, Category_xxFindUniqueOrThrowArgs<ExtArgs>>): Prisma__Category_xxClient<$Result.GetResult<Prisma.$Category_xxPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+    findUniqueOrThrow<T extends Category_83FindUniqueOrThrowArgs>(args: SelectSubset<T, Category_83FindUniqueOrThrowArgs<ExtArgs>>): Prisma__Category_83Client<$Result.GetResult<Prisma.$Category_83Payload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
 
     /**
-     * Find the first Category_xx that matches the filter.
+     * Find the first Category_83 that matches the filter.
      * Note, that providing `undefined` is treated as the value not being there.
      * Read more here: https://pris.ly/d/null-undefined
-     * @param {Category_xxFindFirstArgs} args - Arguments to find a Category_xx
+     * @param {Category_83FindFirstArgs} args - Arguments to find a Category_83
      * @example
-     * // Get one Category_xx
-     * const category_xx = await prisma.category_xx.findFirst({
+     * // Get one Category_83
+     * const category_83 = await prisma.category_83.findFirst({
      *   where: {
      *     // ... provide filter here
      *   }
      * })
      */
-    findFirst<T extends Category_xxFindFirstArgs>(args?: SelectSubset<T, Category_xxFindFirstArgs<ExtArgs>>): Prisma__Category_xxClient<$Result.GetResult<Prisma.$Category_xxPayload<ExtArgs>, T, "findFirst", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
+    findFirst<T extends Category_83FindFirstArgs>(args?: SelectSubset<T, Category_83FindFirstArgs<ExtArgs>>): Prisma__Category_83Client<$Result.GetResult<Prisma.$Category_83Payload<ExtArgs>, T, "findFirst", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
 
     /**
-     * Find the first Category_xx that matches the filter or
+     * Find the first Category_83 that matches the filter or
      * throw `PrismaKnownClientError` with `P2025` code if no matches were found.
      * Note, that providing `undefined` is treated as the value not being there.
      * Read more here: https://pris.ly/d/null-undefined
-     * @param {Category_xxFindFirstOrThrowArgs} args - Arguments to find a Category_xx
+     * @param {Category_83FindFirstOrThrowArgs} args - Arguments to find a Category_83
      * @example
-     * // Get one Category_xx
-     * const category_xx = await prisma.category_xx.findFirstOrThrow({
+     * // Get one Category_83
+     * const category_83 = await prisma.category_83.findFirstOrThrow({
      *   where: {
      *     // ... provide filter here
      *   }
      * })
      */
-    findFirstOrThrow<T extends Category_xxFindFirstOrThrowArgs>(args?: SelectSubset<T, Category_xxFindFirstOrThrowArgs<ExtArgs>>): Prisma__Category_xxClient<$Result.GetResult<Prisma.$Category_xxPayload<ExtArgs>, T, "findFirstOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+    findFirstOrThrow<T extends Category_83FindFirstOrThrowArgs>(args?: SelectSubset<T, Category_83FindFirstOrThrowArgs<ExtArgs>>): Prisma__Category_83Client<$Result.GetResult<Prisma.$Category_83Payload<ExtArgs>, T, "findFirstOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
 
     /**
-     * Find zero or more Category_xxes that matches the filter.
+     * Find zero or more Category_83s that matches the filter.
      * Note, that providing `undefined` is treated as the value not being there.
      * Read more here: https://pris.ly/d/null-undefined
-     * @param {Category_xxFindManyArgs} args - Arguments to filter and select certain fields only.
+     * @param {Category_83FindManyArgs} args - Arguments to filter and select certain fields only.
      * @example
-     * // Get all Category_xxes
-     * const category_xxes = await prisma.category_xx.findMany()
+     * // Get all Category_83s
+     * const category_83s = await prisma.category_83.findMany()
      * 
-     * // Get first 10 Category_xxes
-     * const category_xxes = await prisma.category_xx.findMany({ take: 10 })
+     * // Get first 10 Category_83s
+     * const category_83s = await prisma.category_83.findMany({ take: 10 })
      * 
      * // Only select the `cid`
-     * const category_xxWithCidOnly = await prisma.category_xx.findMany({ select: { cid: true } })
+     * const category_83WithCidOnly = await prisma.category_83.findMany({ select: { cid: true } })
      * 
      */
-    findMany<T extends Category_xxFindManyArgs>(args?: SelectSubset<T, Category_xxFindManyArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$Category_xxPayload<ExtArgs>, T, "findMany", GlobalOmitOptions>>
+    findMany<T extends Category_83FindManyArgs>(args?: SelectSubset<T, Category_83FindManyArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$Category_83Payload<ExtArgs>, T, "findMany", GlobalOmitOptions>>
 
     /**
-     * Create a Category_xx.
-     * @param {Category_xxCreateArgs} args - Arguments to create a Category_xx.
+     * Create a Category_83.
+     * @param {Category_83CreateArgs} args - Arguments to create a Category_83.
      * @example
-     * // Create one Category_xx
-     * const Category_xx = await prisma.category_xx.create({
+     * // Create one Category_83
+     * const Category_83 = await prisma.category_83.create({
      *   data: {
-     *     // ... data to create a Category_xx
+     *     // ... data to create a Category_83
      *   }
      * })
      * 
      */
-    create<T extends Category_xxCreateArgs>(args: SelectSubset<T, Category_xxCreateArgs<ExtArgs>>): Prisma__Category_xxClient<$Result.GetResult<Prisma.$Category_xxPayload<ExtArgs>, T, "create", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+    create<T extends Category_83CreateArgs>(args: SelectSubset<T, Category_83CreateArgs<ExtArgs>>): Prisma__Category_83Client<$Result.GetResult<Prisma.$Category_83Payload<ExtArgs>, T, "create", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
 
     /**
-     * Create many Category_xxes.
-     * @param {Category_xxCreateManyArgs} args - Arguments to create many Category_xxes.
+     * Create many Category_83s.
+     * @param {Category_83CreateManyArgs} args - Arguments to create many Category_83s.
      * @example
-     * // Create many Category_xxes
-     * const category_xx = await prisma.category_xx.createMany({
+     * // Create many Category_83s
+     * const category_83 = await prisma.category_83.createMany({
      *   data: [
      *     // ... provide data here
      *   ]
      * })
      *     
      */
-    createMany<T extends Category_xxCreateManyArgs>(args?: SelectSubset<T, Category_xxCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+    createMany<T extends Category_83CreateManyArgs>(args?: SelectSubset<T, Category_83CreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
 
     /**
-     * Create many Category_xxes and returns the data saved in the database.
-     * @param {Category_xxCreateManyAndReturnArgs} args - Arguments to create many Category_xxes.
+     * Create many Category_83s and returns the data saved in the database.
+     * @param {Category_83CreateManyAndReturnArgs} args - Arguments to create many Category_83s.
      * @example
-     * // Create many Category_xxes
-     * const category_xx = await prisma.category_xx.createManyAndReturn({
+     * // Create many Category_83s
+     * const category_83 = await prisma.category_83.createManyAndReturn({
      *   data: [
      *     // ... provide data here
      *   ]
      * })
      * 
-     * // Create many Category_xxes and only return the `cid`
-     * const category_xxWithCidOnly = await prisma.category_xx.createManyAndReturn({
+     * // Create many Category_83s and only return the `cid`
+     * const category_83WithCidOnly = await prisma.category_83.createManyAndReturn({
      *   select: { cid: true },
      *   data: [
      *     // ... provide data here
@@ -4673,28 +4673,28 @@ export namespace Prisma {
      * Read more here: https://pris.ly/d/null-undefined
      * 
      */
-    createManyAndReturn<T extends Category_xxCreateManyAndReturnArgs>(args?: SelectSubset<T, Category_xxCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$Category_xxPayload<ExtArgs>, T, "createManyAndReturn", GlobalOmitOptions>>
+    createManyAndReturn<T extends Category_83CreateManyAndReturnArgs>(args?: SelectSubset<T, Category_83CreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$Category_83Payload<ExtArgs>, T, "createManyAndReturn", GlobalOmitOptions>>
 
     /**
-     * Delete a Category_xx.
-     * @param {Category_xxDeleteArgs} args - Arguments to delete one Category_xx.
+     * Delete a Category_83.
+     * @param {Category_83DeleteArgs} args - Arguments to delete one Category_83.
      * @example
-     * // Delete one Category_xx
-     * const Category_xx = await prisma.category_xx.delete({
+     * // Delete one Category_83
+     * const Category_83 = await prisma.category_83.delete({
      *   where: {
-     *     // ... filter to delete one Category_xx
+     *     // ... filter to delete one Category_83
      *   }
      * })
      * 
      */
-    delete<T extends Category_xxDeleteArgs>(args: SelectSubset<T, Category_xxDeleteArgs<ExtArgs>>): Prisma__Category_xxClient<$Result.GetResult<Prisma.$Category_xxPayload<ExtArgs>, T, "delete", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+    delete<T extends Category_83DeleteArgs>(args: SelectSubset<T, Category_83DeleteArgs<ExtArgs>>): Prisma__Category_83Client<$Result.GetResult<Prisma.$Category_83Payload<ExtArgs>, T, "delete", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
 
     /**
-     * Update one Category_xx.
-     * @param {Category_xxUpdateArgs} args - Arguments to update one Category_xx.
+     * Update one Category_83.
+     * @param {Category_83UpdateArgs} args - Arguments to update one Category_83.
      * @example
-     * // Update one Category_xx
-     * const category_xx = await prisma.category_xx.update({
+     * // Update one Category_83
+     * const category_83 = await prisma.category_83.update({
      *   where: {
      *     // ... provide filter here
      *   },
@@ -4704,30 +4704,30 @@ export namespace Prisma {
      * })
      * 
      */
-    update<T extends Category_xxUpdateArgs>(args: SelectSubset<T, Category_xxUpdateArgs<ExtArgs>>): Prisma__Category_xxClient<$Result.GetResult<Prisma.$Category_xxPayload<ExtArgs>, T, "update", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+    update<T extends Category_83UpdateArgs>(args: SelectSubset<T, Category_83UpdateArgs<ExtArgs>>): Prisma__Category_83Client<$Result.GetResult<Prisma.$Category_83Payload<ExtArgs>, T, "update", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
 
     /**
-     * Delete zero or more Category_xxes.
-     * @param {Category_xxDeleteManyArgs} args - Arguments to filter Category_xxes to delete.
+     * Delete zero or more Category_83s.
+     * @param {Category_83DeleteManyArgs} args - Arguments to filter Category_83s to delete.
      * @example
-     * // Delete a few Category_xxes
-     * const { count } = await prisma.category_xx.deleteMany({
+     * // Delete a few Category_83s
+     * const { count } = await prisma.category_83.deleteMany({
      *   where: {
      *     // ... provide filter here
      *   }
      * })
      * 
      */
-    deleteMany<T extends Category_xxDeleteManyArgs>(args?: SelectSubset<T, Category_xxDeleteManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+    deleteMany<T extends Category_83DeleteManyArgs>(args?: SelectSubset<T, Category_83DeleteManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
 
     /**
-     * Update zero or more Category_xxes.
+     * Update zero or more Category_83s.
      * Note, that providing `undefined` is treated as the value not being there.
      * Read more here: https://pris.ly/d/null-undefined
-     * @param {Category_xxUpdateManyArgs} args - Arguments to update one or more rows.
+     * @param {Category_83UpdateManyArgs} args - Arguments to update one or more rows.
      * @example
-     * // Update many Category_xxes
-     * const category_xx = await prisma.category_xx.updateMany({
+     * // Update many Category_83s
+     * const category_83 = await prisma.category_83.updateMany({
      *   where: {
      *     // ... provide filter here
      *   },
@@ -4737,14 +4737,14 @@ export namespace Prisma {
      * })
      * 
      */
-    updateMany<T extends Category_xxUpdateManyArgs>(args: SelectSubset<T, Category_xxUpdateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+    updateMany<T extends Category_83UpdateManyArgs>(args: SelectSubset<T, Category_83UpdateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
 
     /**
-     * Update zero or more Category_xxes and returns the data updated in the database.
-     * @param {Category_xxUpdateManyAndReturnArgs} args - Arguments to update many Category_xxes.
+     * Update zero or more Category_83s and returns the data updated in the database.
+     * @param {Category_83UpdateManyAndReturnArgs} args - Arguments to update many Category_83s.
      * @example
-     * // Update many Category_xxes
-     * const category_xx = await prisma.category_xx.updateManyAndReturn({
+     * // Update many Category_83s
+     * const category_83 = await prisma.category_83.updateManyAndReturn({
      *   where: {
      *     // ... provide filter here
      *   },
@@ -4753,8 +4753,8 @@ export namespace Prisma {
      *   ]
      * })
      * 
-     * // Update zero or more Category_xxes and only return the `cid`
-     * const category_xxWithCidOnly = await prisma.category_xx.updateManyAndReturn({
+     * // Update zero or more Category_83s and only return the `cid`
+     * const category_83WithCidOnly = await prisma.category_83.updateManyAndReturn({
      *   select: { cid: true },
      *   where: {
      *     // ... provide filter here
@@ -4767,56 +4767,56 @@ export namespace Prisma {
      * Read more here: https://pris.ly/d/null-undefined
      * 
      */
-    updateManyAndReturn<T extends Category_xxUpdateManyAndReturnArgs>(args: SelectSubset<T, Category_xxUpdateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$Category_xxPayload<ExtArgs>, T, "updateManyAndReturn", GlobalOmitOptions>>
+    updateManyAndReturn<T extends Category_83UpdateManyAndReturnArgs>(args: SelectSubset<T, Category_83UpdateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$Category_83Payload<ExtArgs>, T, "updateManyAndReturn", GlobalOmitOptions>>
 
     /**
-     * Create or update one Category_xx.
-     * @param {Category_xxUpsertArgs} args - Arguments to update or create a Category_xx.
+     * Create or update one Category_83.
+     * @param {Category_83UpsertArgs} args - Arguments to update or create a Category_83.
      * @example
-     * // Update or create a Category_xx
-     * const category_xx = await prisma.category_xx.upsert({
+     * // Update or create a Category_83
+     * const category_83 = await prisma.category_83.upsert({
      *   create: {
-     *     // ... data to create a Category_xx
+     *     // ... data to create a Category_83
      *   },
      *   update: {
      *     // ... in case it already exists, update
      *   },
      *   where: {
-     *     // ... the filter for the Category_xx we want to update
+     *     // ... the filter for the Category_83 we want to update
      *   }
      * })
      */
-    upsert<T extends Category_xxUpsertArgs>(args: SelectSubset<T, Category_xxUpsertArgs<ExtArgs>>): Prisma__Category_xxClient<$Result.GetResult<Prisma.$Category_xxPayload<ExtArgs>, T, "upsert", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+    upsert<T extends Category_83UpsertArgs>(args: SelectSubset<T, Category_83UpsertArgs<ExtArgs>>): Prisma__Category_83Client<$Result.GetResult<Prisma.$Category_83Payload<ExtArgs>, T, "upsert", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
 
 
     /**
-     * Count the number of Category_xxes.
+     * Count the number of Category_83s.
      * Note, that providing `undefined` is treated as the value not being there.
      * Read more here: https://pris.ly/d/null-undefined
-     * @param {Category_xxCountArgs} args - Arguments to filter Category_xxes to count.
+     * @param {Category_83CountArgs} args - Arguments to filter Category_83s to count.
      * @example
-     * // Count the number of Category_xxes
-     * const count = await prisma.category_xx.count({
+     * // Count the number of Category_83s
+     * const count = await prisma.category_83.count({
      *   where: {
-     *     // ... the filter for the Category_xxes we want to count
+     *     // ... the filter for the Category_83s we want to count
      *   }
      * })
     **/
-    count<T extends Category_xxCountArgs>(
-      args?: Subset<T, Category_xxCountArgs>,
+    count<T extends Category_83CountArgs>(
+      args?: Subset<T, Category_83CountArgs>,
     ): Prisma.PrismaPromise<
       T extends $Utils.Record<'select', any>
         ? T['select'] extends true
           ? number
-          : GetScalarType<T['select'], Category_xxCountAggregateOutputType>
+          : GetScalarType<T['select'], Category_83CountAggregateOutputType>
         : number
     >
 
     /**
-     * Allows you to perform aggregations operations on a Category_xx.
+     * Allows you to perform aggregations operations on a Category_83.
      * Note, that providing `undefined` is treated as the value not being there.
      * Read more here: https://pris.ly/d/null-undefined
-     * @param {Category_xxAggregateArgs} args - Select which aggregations you would like to apply and on what fields.
+     * @param {Category_83AggregateArgs} args - Select which aggregations you would like to apply and on what fields.
      * @example
      * // Ordered by age ascending
      * // Where email contains prisma.io
@@ -4836,13 +4836,13 @@ export namespace Prisma {
      *   take: 10,
      * })
     **/
-    aggregate<T extends Category_xxAggregateArgs>(args: Subset<T, Category_xxAggregateArgs>): Prisma.PrismaPromise<GetCategory_xxAggregateType<T>>
+    aggregate<T extends Category_83AggregateArgs>(args: Subset<T, Category_83AggregateArgs>): Prisma.PrismaPromise<GetCategory_83AggregateType<T>>
 
     /**
-     * Group by Category_xx.
+     * Group by Category_83.
      * Note, that providing `undefined` is treated as the value not being there.
      * Read more here: https://pris.ly/d/null-undefined
-     * @param {Category_xxGroupByArgs} args - Group by arguments.
+     * @param {Category_83GroupByArgs} args - Group by arguments.
      * @example
      * // Group by city, order by createdAt, get count
      * const result = await prisma.user.groupBy({
@@ -4857,14 +4857,14 @@ export namespace Prisma {
      * 
     **/
     groupBy<
-      T extends Category_xxGroupByArgs,
+      T extends Category_83GroupByArgs,
       HasSelectOrTake extends Or<
         Extends<'skip', Keys<T>>,
         Extends<'take', Keys<T>>
       >,
       OrderByArg extends True extends HasSelectOrTake
-        ? { orderBy: Category_xxGroupByArgs['orderBy'] }
-        : { orderBy?: Category_xxGroupByArgs['orderBy'] },
+        ? { orderBy: Category_83GroupByArgs['orderBy'] }
+        : { orderBy?: Category_83GroupByArgs['orderBy'] },
       OrderFields extends ExcludeUnderscoreKeys<Keys<MaybeTupleToUnion<T['orderBy']>>>,
       ByFields extends MaybeTupleToUnion<T['by']>,
       ByValid extends Has<ByFields, OrderFields>,
@@ -4913,20 +4913,20 @@ export namespace Prisma {
             ? never
             : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
         }[OrderFields]
-    >(args: SubsetIntersection<T, Category_xxGroupByArgs, OrderByArg> & InputErrors): {} extends InputErrors ? GetCategory_xxGroupByPayload<T> : Prisma.PrismaPromise<InputErrors>
+    >(args: SubsetIntersection<T, Category_83GroupByArgs, OrderByArg> & InputErrors): {} extends InputErrors ? GetCategory_83GroupByPayload<T> : Prisma.PrismaPromise<InputErrors>
   /**
-   * Fields of the Category_xx model
+   * Fields of the Category_83 model
    */
-  readonly fields: Category_xxFieldRefs;
+  readonly fields: Category_83FieldRefs;
   }
 
   /**
-   * The delegate class that acts as a "Promise-like" for Category_xx.
+   * The delegate class that acts as a "Promise-like" for Category_83.
    * Why is this prefixed with `Prisma__`?
    * Because we want to prevent naming conflicts as mentioned in
    * https://github.com/prisma/prisma-client-js/issues/707
    */
-  export interface Prisma__Category_xxClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> extends Prisma.PrismaPromise<T> {
+  export interface Prisma__Category_83Client<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> extends Prisma.PrismaPromise<T> {
     readonly [Symbol.toStringTag]: "PrismaPromise"
     /**
      * Attaches callbacks for the resolution and/or rejection of the Promise.
@@ -4954,381 +4954,381 @@ export namespace Prisma {
 
 
   /**
-   * Fields of the Category_xx model
+   * Fields of the Category_83 model
    */
-  interface Category_xxFieldRefs {
-    readonly cid: FieldRef<"Category_xx", 'Int'>
-    readonly cname: FieldRef<"Category_xx", 'String'>
-    readonly size: FieldRef<"Category_xx", 'String'>
-    readonly image_url: FieldRef<"Category_xx", 'String'>
+  interface Category_83FieldRefs {
+    readonly cid: FieldRef<"Category_83", 'Int'>
+    readonly cname: FieldRef<"Category_83", 'String'>
+    readonly size: FieldRef<"Category_83", 'String'>
+    readonly image_url: FieldRef<"Category_83", 'String'>
   }
     
 
   // Custom InputTypes
   /**
-   * Category_xx findUnique
+   * Category_83 findUnique
    */
-  export type Category_xxFindUniqueArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type Category_83FindUniqueArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * Select specific fields to fetch from the Category_xx
+     * Select specific fields to fetch from the Category_83
      */
-    select?: Category_xxSelect<ExtArgs> | null
+    select?: Category_83Select<ExtArgs> | null
     /**
-     * Omit specific fields from the Category_xx
+     * Omit specific fields from the Category_83
      */
-    omit?: Category_xxOmit<ExtArgs> | null
+    omit?: Category_83Omit<ExtArgs> | null
     /**
-     * Filter, which Category_xx to fetch.
+     * Filter, which Category_83 to fetch.
      */
-    where: Category_xxWhereUniqueInput
+    where: Category_83WhereUniqueInput
   }
 
   /**
-   * Category_xx findUniqueOrThrow
+   * Category_83 findUniqueOrThrow
    */
-  export type Category_xxFindUniqueOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type Category_83FindUniqueOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * Select specific fields to fetch from the Category_xx
+     * Select specific fields to fetch from the Category_83
      */
-    select?: Category_xxSelect<ExtArgs> | null
+    select?: Category_83Select<ExtArgs> | null
     /**
-     * Omit specific fields from the Category_xx
+     * Omit specific fields from the Category_83
      */
-    omit?: Category_xxOmit<ExtArgs> | null
+    omit?: Category_83Omit<ExtArgs> | null
     /**
-     * Filter, which Category_xx to fetch.
+     * Filter, which Category_83 to fetch.
      */
-    where: Category_xxWhereUniqueInput
+    where: Category_83WhereUniqueInput
   }
 
   /**
-   * Category_xx findFirst
+   * Category_83 findFirst
    */
-  export type Category_xxFindFirstArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type Category_83FindFirstArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * Select specific fields to fetch from the Category_xx
+     * Select specific fields to fetch from the Category_83
      */
-    select?: Category_xxSelect<ExtArgs> | null
+    select?: Category_83Select<ExtArgs> | null
     /**
-     * Omit specific fields from the Category_xx
+     * Omit specific fields from the Category_83
      */
-    omit?: Category_xxOmit<ExtArgs> | null
+    omit?: Category_83Omit<ExtArgs> | null
     /**
-     * Filter, which Category_xx to fetch.
+     * Filter, which Category_83 to fetch.
      */
-    where?: Category_xxWhereInput
+    where?: Category_83WhereInput
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
      * 
-     * Determine the order of Category_xxes to fetch.
+     * Determine the order of Category_83s to fetch.
      */
-    orderBy?: Category_xxOrderByWithRelationInput | Category_xxOrderByWithRelationInput[]
+    orderBy?: Category_83OrderByWithRelationInput | Category_83OrderByWithRelationInput[]
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
      * 
-     * Sets the position for searching for Category_xxes.
+     * Sets the position for searching for Category_83s.
      */
-    cursor?: Category_xxWhereUniqueInput
+    cursor?: Category_83WhereUniqueInput
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
      * 
-     * Take `±n` Category_xxes from the position of the cursor.
+     * Take `±n` Category_83s from the position of the cursor.
      */
     take?: number
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
      * 
-     * Skip the first `n` Category_xxes.
+     * Skip the first `n` Category_83s.
      */
     skip?: number
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
      * 
-     * Filter by unique combinations of Category_xxes.
+     * Filter by unique combinations of Category_83s.
      */
-    distinct?: Category_xxScalarFieldEnum | Category_xxScalarFieldEnum[]
+    distinct?: Category_83ScalarFieldEnum | Category_83ScalarFieldEnum[]
   }
 
   /**
-   * Category_xx findFirstOrThrow
+   * Category_83 findFirstOrThrow
    */
-  export type Category_xxFindFirstOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type Category_83FindFirstOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * Select specific fields to fetch from the Category_xx
+     * Select specific fields to fetch from the Category_83
      */
-    select?: Category_xxSelect<ExtArgs> | null
+    select?: Category_83Select<ExtArgs> | null
     /**
-     * Omit specific fields from the Category_xx
+     * Omit specific fields from the Category_83
      */
-    omit?: Category_xxOmit<ExtArgs> | null
+    omit?: Category_83Omit<ExtArgs> | null
     /**
-     * Filter, which Category_xx to fetch.
+     * Filter, which Category_83 to fetch.
      */
-    where?: Category_xxWhereInput
+    where?: Category_83WhereInput
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
      * 
-     * Determine the order of Category_xxes to fetch.
+     * Determine the order of Category_83s to fetch.
      */
-    orderBy?: Category_xxOrderByWithRelationInput | Category_xxOrderByWithRelationInput[]
+    orderBy?: Category_83OrderByWithRelationInput | Category_83OrderByWithRelationInput[]
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
      * 
-     * Sets the position for searching for Category_xxes.
+     * Sets the position for searching for Category_83s.
      */
-    cursor?: Category_xxWhereUniqueInput
+    cursor?: Category_83WhereUniqueInput
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
      * 
-     * Take `±n` Category_xxes from the position of the cursor.
+     * Take `±n` Category_83s from the position of the cursor.
      */
     take?: number
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
      * 
-     * Skip the first `n` Category_xxes.
+     * Skip the first `n` Category_83s.
      */
     skip?: number
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
      * 
-     * Filter by unique combinations of Category_xxes.
+     * Filter by unique combinations of Category_83s.
      */
-    distinct?: Category_xxScalarFieldEnum | Category_xxScalarFieldEnum[]
+    distinct?: Category_83ScalarFieldEnum | Category_83ScalarFieldEnum[]
   }
 
   /**
-   * Category_xx findMany
+   * Category_83 findMany
    */
-  export type Category_xxFindManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type Category_83FindManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * Select specific fields to fetch from the Category_xx
+     * Select specific fields to fetch from the Category_83
      */
-    select?: Category_xxSelect<ExtArgs> | null
+    select?: Category_83Select<ExtArgs> | null
     /**
-     * Omit specific fields from the Category_xx
+     * Omit specific fields from the Category_83
      */
-    omit?: Category_xxOmit<ExtArgs> | null
+    omit?: Category_83Omit<ExtArgs> | null
     /**
-     * Filter, which Category_xxes to fetch.
+     * Filter, which Category_83s to fetch.
      */
-    where?: Category_xxWhereInput
+    where?: Category_83WhereInput
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
      * 
-     * Determine the order of Category_xxes to fetch.
+     * Determine the order of Category_83s to fetch.
      */
-    orderBy?: Category_xxOrderByWithRelationInput | Category_xxOrderByWithRelationInput[]
+    orderBy?: Category_83OrderByWithRelationInput | Category_83OrderByWithRelationInput[]
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
      * 
-     * Sets the position for listing Category_xxes.
+     * Sets the position for listing Category_83s.
      */
-    cursor?: Category_xxWhereUniqueInput
+    cursor?: Category_83WhereUniqueInput
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
      * 
-     * Take `±n` Category_xxes from the position of the cursor.
+     * Take `±n` Category_83s from the position of the cursor.
      */
     take?: number
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
      * 
-     * Skip the first `n` Category_xxes.
+     * Skip the first `n` Category_83s.
      */
     skip?: number
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
      * 
-     * Filter by unique combinations of Category_xxes.
+     * Filter by unique combinations of Category_83s.
      */
-    distinct?: Category_xxScalarFieldEnum | Category_xxScalarFieldEnum[]
+    distinct?: Category_83ScalarFieldEnum | Category_83ScalarFieldEnum[]
   }
 
   /**
-   * Category_xx create
+   * Category_83 create
    */
-  export type Category_xxCreateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type Category_83CreateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * Select specific fields to fetch from the Category_xx
+     * Select specific fields to fetch from the Category_83
      */
-    select?: Category_xxSelect<ExtArgs> | null
+    select?: Category_83Select<ExtArgs> | null
     /**
-     * Omit specific fields from the Category_xx
+     * Omit specific fields from the Category_83
      */
-    omit?: Category_xxOmit<ExtArgs> | null
+    omit?: Category_83Omit<ExtArgs> | null
     /**
-     * The data needed to create a Category_xx.
+     * The data needed to create a Category_83.
      */
-    data: XOR<Category_xxCreateInput, Category_xxUncheckedCreateInput>
+    data: XOR<Category_83CreateInput, Category_83UncheckedCreateInput>
   }
 
   /**
-   * Category_xx createMany
+   * Category_83 createMany
    */
-  export type Category_xxCreateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type Category_83CreateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * The data used to create many Category_xxes.
+     * The data used to create many Category_83s.
      */
-    data: Category_xxCreateManyInput | Category_xxCreateManyInput[]
+    data: Category_83CreateManyInput | Category_83CreateManyInput[]
     skipDuplicates?: boolean
   }
 
   /**
-   * Category_xx createManyAndReturn
+   * Category_83 createManyAndReturn
    */
-  export type Category_xxCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type Category_83CreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * Select specific fields to fetch from the Category_xx
+     * Select specific fields to fetch from the Category_83
      */
-    select?: Category_xxSelectCreateManyAndReturn<ExtArgs> | null
+    select?: Category_83SelectCreateManyAndReturn<ExtArgs> | null
     /**
-     * Omit specific fields from the Category_xx
+     * Omit specific fields from the Category_83
      */
-    omit?: Category_xxOmit<ExtArgs> | null
+    omit?: Category_83Omit<ExtArgs> | null
     /**
-     * The data used to create many Category_xxes.
+     * The data used to create many Category_83s.
      */
-    data: Category_xxCreateManyInput | Category_xxCreateManyInput[]
+    data: Category_83CreateManyInput | Category_83CreateManyInput[]
     skipDuplicates?: boolean
   }
 
   /**
-   * Category_xx update
+   * Category_83 update
    */
-  export type Category_xxUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type Category_83UpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * Select specific fields to fetch from the Category_xx
+     * Select specific fields to fetch from the Category_83
      */
-    select?: Category_xxSelect<ExtArgs> | null
+    select?: Category_83Select<ExtArgs> | null
     /**
-     * Omit specific fields from the Category_xx
+     * Omit specific fields from the Category_83
      */
-    omit?: Category_xxOmit<ExtArgs> | null
+    omit?: Category_83Omit<ExtArgs> | null
     /**
-     * The data needed to update a Category_xx.
+     * The data needed to update a Category_83.
      */
-    data: XOR<Category_xxUpdateInput, Category_xxUncheckedUpdateInput>
+    data: XOR<Category_83UpdateInput, Category_83UncheckedUpdateInput>
     /**
-     * Choose, which Category_xx to update.
+     * Choose, which Category_83 to update.
      */
-    where: Category_xxWhereUniqueInput
+    where: Category_83WhereUniqueInput
   }
 
   /**
-   * Category_xx updateMany
+   * Category_83 updateMany
    */
-  export type Category_xxUpdateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type Category_83UpdateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * The data used to update Category_xxes.
+     * The data used to update Category_83s.
      */
-    data: XOR<Category_xxUpdateManyMutationInput, Category_xxUncheckedUpdateManyInput>
+    data: XOR<Category_83UpdateManyMutationInput, Category_83UncheckedUpdateManyInput>
     /**
-     * Filter which Category_xxes to update
+     * Filter which Category_83s to update
      */
-    where?: Category_xxWhereInput
+    where?: Category_83WhereInput
     /**
-     * Limit how many Category_xxes to update.
+     * Limit how many Category_83s to update.
      */
     limit?: number
   }
 
   /**
-   * Category_xx updateManyAndReturn
+   * Category_83 updateManyAndReturn
    */
-  export type Category_xxUpdateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type Category_83UpdateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * Select specific fields to fetch from the Category_xx
+     * Select specific fields to fetch from the Category_83
      */
-    select?: Category_xxSelectUpdateManyAndReturn<ExtArgs> | null
+    select?: Category_83SelectUpdateManyAndReturn<ExtArgs> | null
     /**
-     * Omit specific fields from the Category_xx
+     * Omit specific fields from the Category_83
      */
-    omit?: Category_xxOmit<ExtArgs> | null
+    omit?: Category_83Omit<ExtArgs> | null
     /**
-     * The data used to update Category_xxes.
+     * The data used to update Category_83s.
      */
-    data: XOR<Category_xxUpdateManyMutationInput, Category_xxUncheckedUpdateManyInput>
+    data: XOR<Category_83UpdateManyMutationInput, Category_83UncheckedUpdateManyInput>
     /**
-     * Filter which Category_xxes to update
+     * Filter which Category_83s to update
      */
-    where?: Category_xxWhereInput
+    where?: Category_83WhereInput
     /**
-     * Limit how many Category_xxes to update.
+     * Limit how many Category_83s to update.
      */
     limit?: number
   }
 
   /**
-   * Category_xx upsert
+   * Category_83 upsert
    */
-  export type Category_xxUpsertArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type Category_83UpsertArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * Select specific fields to fetch from the Category_xx
+     * Select specific fields to fetch from the Category_83
      */
-    select?: Category_xxSelect<ExtArgs> | null
+    select?: Category_83Select<ExtArgs> | null
     /**
-     * Omit specific fields from the Category_xx
+     * Omit specific fields from the Category_83
      */
-    omit?: Category_xxOmit<ExtArgs> | null
+    omit?: Category_83Omit<ExtArgs> | null
     /**
-     * The filter to search for the Category_xx to update in case it exists.
+     * The filter to search for the Category_83 to update in case it exists.
      */
-    where: Category_xxWhereUniqueInput
+    where: Category_83WhereUniqueInput
     /**
-     * In case the Category_xx found by the `where` argument doesn't exist, create a new Category_xx with this data.
+     * In case the Category_83 found by the `where` argument doesn't exist, create a new Category_83 with this data.
      */
-    create: XOR<Category_xxCreateInput, Category_xxUncheckedCreateInput>
+    create: XOR<Category_83CreateInput, Category_83UncheckedCreateInput>
     /**
-     * In case the Category_xx was found with the provided `where` argument, update it with this data.
+     * In case the Category_83 was found with the provided `where` argument, update it with this data.
      */
-    update: XOR<Category_xxUpdateInput, Category_xxUncheckedUpdateInput>
+    update: XOR<Category_83UpdateInput, Category_83UncheckedUpdateInput>
   }
 
   /**
-   * Category_xx delete
+   * Category_83 delete
    */
-  export type Category_xxDeleteArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type Category_83DeleteArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * Select specific fields to fetch from the Category_xx
+     * Select specific fields to fetch from the Category_83
      */
-    select?: Category_xxSelect<ExtArgs> | null
+    select?: Category_83Select<ExtArgs> | null
     /**
-     * Omit specific fields from the Category_xx
+     * Omit specific fields from the Category_83
      */
-    omit?: Category_xxOmit<ExtArgs> | null
+    omit?: Category_83Omit<ExtArgs> | null
     /**
-     * Filter which Category_xx to delete.
+     * Filter which Category_83 to delete.
      */
-    where: Category_xxWhereUniqueInput
+    where: Category_83WhereUniqueInput
   }
 
   /**
-   * Category_xx deleteMany
+   * Category_83 deleteMany
    */
-  export type Category_xxDeleteManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type Category_83DeleteManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * Filter which Category_xxes to delete
+     * Filter which Category_83s to delete
      */
-    where?: Category_xxWhereInput
+    where?: Category_83WhereInput
     /**
-     * Limit how many Category_xxes to delete.
+     * Limit how many Category_83s to delete.
      */
     limit?: number
   }
 
   /**
-   * Category_xx without action
+   * Category_83 without action
    */
-  export type Category_xxDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type Category_83DefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * Select specific fields to fetch from the Category_xx
+     * Select specific fields to fetch from the Category_83
      */
-    select?: Category_xxSelect<ExtArgs> | null
+    select?: Category_83Select<ExtArgs> | null
     /**
-     * Omit specific fields from the Category_xx
+     * Omit specific fields from the Category_83
      */
-    omit?: Category_xxOmit<ExtArgs> | null
+    omit?: Category_83Omit<ExtArgs> | null
   }
 
 
@@ -6333,39 +6333,30 @@ export namespace Prisma {
 
 
   /**
-   * Model Shop_xx
+   * Model Shop_83
    */
 
-  export type AggregateShop_xx = {
-    _count: Shop_xxCountAggregateOutputType | null
-    _avg: Shop_xxAvgAggregateOutputType | null
-    _sum: Shop_xxSumAggregateOutputType | null
-    _min: Shop_xxMinAggregateOutputType | null
-    _max: Shop_xxMaxAggregateOutputType | null
+  export type AggregateShop_83 = {
+    _count: Shop_83CountAggregateOutputType | null
+    _avg: Shop_83AvgAggregateOutputType | null
+    _sum: Shop_83SumAggregateOutputType | null
+    _min: Shop_83MinAggregateOutputType | null
+    _max: Shop_83MaxAggregateOutputType | null
   }
 
-  export type Shop_xxAvgAggregateOutputType = {
+  export type Shop_83AvgAggregateOutputType = {
     pid: number | null
     cat_id: number | null
     price: number | null
   }
 
-  export type Shop_xxSumAggregateOutputType = {
+  export type Shop_83SumAggregateOutputType = {
     pid: number | null
     cat_id: number | null
     price: number | null
   }
 
-  export type Shop_xxMinAggregateOutputType = {
-    pid: number | null
-    pname: string | null
-    cat_id: number | null
-    price: number | null
-    img_url: string | null
-    remote_img_url: string | null
-  }
-
-  export type Shop_xxMaxAggregateOutputType = {
+  export type Shop_83MinAggregateOutputType = {
     pid: number | null
     pname: string | null
     cat_id: number | null
@@ -6374,7 +6365,16 @@ export namespace Prisma {
     remote_img_url: string | null
   }
 
-  export type Shop_xxCountAggregateOutputType = {
+  export type Shop_83MaxAggregateOutputType = {
+    pid: number | null
+    pname: string | null
+    cat_id: number | null
+    price: number | null
+    img_url: string | null
+    remote_img_url: string | null
+  }
+
+  export type Shop_83CountAggregateOutputType = {
     pid: number
     pname: number
     cat_id: number
@@ -6385,28 +6385,19 @@ export namespace Prisma {
   }
 
 
-  export type Shop_xxAvgAggregateInputType = {
+  export type Shop_83AvgAggregateInputType = {
     pid?: true
     cat_id?: true
     price?: true
   }
 
-  export type Shop_xxSumAggregateInputType = {
+  export type Shop_83SumAggregateInputType = {
     pid?: true
     cat_id?: true
     price?: true
   }
 
-  export type Shop_xxMinAggregateInputType = {
-    pid?: true
-    pname?: true
-    cat_id?: true
-    price?: true
-    img_url?: true
-    remote_img_url?: true
-  }
-
-  export type Shop_xxMaxAggregateInputType = {
+  export type Shop_83MinAggregateInputType = {
     pid?: true
     pname?: true
     cat_id?: true
@@ -6415,7 +6406,16 @@ export namespace Prisma {
     remote_img_url?: true
   }
 
-  export type Shop_xxCountAggregateInputType = {
+  export type Shop_83MaxAggregateInputType = {
+    pid?: true
+    pname?: true
+    cat_id?: true
+    price?: true
+    img_url?: true
+    remote_img_url?: true
+  }
+
+  export type Shop_83CountAggregateInputType = {
     pid?: true
     pname?: true
     cat_id?: true
@@ -6425,148 +6425,148 @@ export namespace Prisma {
     _all?: true
   }
 
-  export type Shop_xxAggregateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type Shop_83AggregateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * Filter which Shop_xx to aggregate.
+     * Filter which Shop_83 to aggregate.
      */
-    where?: Shop_xxWhereInput
+    where?: Shop_83WhereInput
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
      * 
-     * Determine the order of Shop_xxes to fetch.
+     * Determine the order of Shop_83s to fetch.
      */
-    orderBy?: Shop_xxOrderByWithRelationInput | Shop_xxOrderByWithRelationInput[]
+    orderBy?: Shop_83OrderByWithRelationInput | Shop_83OrderByWithRelationInput[]
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
      * 
      * Sets the start position
      */
-    cursor?: Shop_xxWhereUniqueInput
+    cursor?: Shop_83WhereUniqueInput
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
      * 
-     * Take `±n` Shop_xxes from the position of the cursor.
+     * Take `±n` Shop_83s from the position of the cursor.
      */
     take?: number
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
      * 
-     * Skip the first `n` Shop_xxes.
+     * Skip the first `n` Shop_83s.
      */
     skip?: number
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
      * 
-     * Count returned Shop_xxes
+     * Count returned Shop_83s
     **/
-    _count?: true | Shop_xxCountAggregateInputType
+    _count?: true | Shop_83CountAggregateInputType
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
      * 
      * Select which fields to average
     **/
-    _avg?: Shop_xxAvgAggregateInputType
+    _avg?: Shop_83AvgAggregateInputType
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
      * 
      * Select which fields to sum
     **/
-    _sum?: Shop_xxSumAggregateInputType
+    _sum?: Shop_83SumAggregateInputType
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
      * 
      * Select which fields to find the minimum value
     **/
-    _min?: Shop_xxMinAggregateInputType
+    _min?: Shop_83MinAggregateInputType
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
      * 
      * Select which fields to find the maximum value
     **/
-    _max?: Shop_xxMaxAggregateInputType
+    _max?: Shop_83MaxAggregateInputType
   }
 
-  export type GetShop_xxAggregateType<T extends Shop_xxAggregateArgs> = {
-        [P in keyof T & keyof AggregateShop_xx]: P extends '_count' | 'count'
+  export type GetShop_83AggregateType<T extends Shop_83AggregateArgs> = {
+        [P in keyof T & keyof AggregateShop_83]: P extends '_count' | 'count'
       ? T[P] extends true
         ? number
-        : GetScalarType<T[P], AggregateShop_xx[P]>
-      : GetScalarType<T[P], AggregateShop_xx[P]>
+        : GetScalarType<T[P], AggregateShop_83[P]>
+      : GetScalarType<T[P], AggregateShop_83[P]>
   }
 
 
 
 
-  export type Shop_xxGroupByArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    where?: Shop_xxWhereInput
-    orderBy?: Shop_xxOrderByWithAggregationInput | Shop_xxOrderByWithAggregationInput[]
-    by: Shop_xxScalarFieldEnum[] | Shop_xxScalarFieldEnum
-    having?: Shop_xxScalarWhereWithAggregatesInput
+  export type Shop_83GroupByArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: Shop_83WhereInput
+    orderBy?: Shop_83OrderByWithAggregationInput | Shop_83OrderByWithAggregationInput[]
+    by: Shop_83ScalarFieldEnum[] | Shop_83ScalarFieldEnum
+    having?: Shop_83ScalarWhereWithAggregatesInput
     take?: number
     skip?: number
-    _count?: Shop_xxCountAggregateInputType | true
-    _avg?: Shop_xxAvgAggregateInputType
-    _sum?: Shop_xxSumAggregateInputType
-    _min?: Shop_xxMinAggregateInputType
-    _max?: Shop_xxMaxAggregateInputType
+    _count?: Shop_83CountAggregateInputType | true
+    _avg?: Shop_83AvgAggregateInputType
+    _sum?: Shop_83SumAggregateInputType
+    _min?: Shop_83MinAggregateInputType
+    _max?: Shop_83MaxAggregateInputType
   }
 
-  export type Shop_xxGroupByOutputType = {
+  export type Shop_83GroupByOutputType = {
     pid: number
     pname: string | null
     cat_id: number | null
     price: number | null
     img_url: string | null
     remote_img_url: string | null
-    _count: Shop_xxCountAggregateOutputType | null
-    _avg: Shop_xxAvgAggregateOutputType | null
-    _sum: Shop_xxSumAggregateOutputType | null
-    _min: Shop_xxMinAggregateOutputType | null
-    _max: Shop_xxMaxAggregateOutputType | null
+    _count: Shop_83CountAggregateOutputType | null
+    _avg: Shop_83AvgAggregateOutputType | null
+    _sum: Shop_83SumAggregateOutputType | null
+    _min: Shop_83MinAggregateOutputType | null
+    _max: Shop_83MaxAggregateOutputType | null
   }
 
-  type GetShop_xxGroupByPayload<T extends Shop_xxGroupByArgs> = Prisma.PrismaPromise<
+  type GetShop_83GroupByPayload<T extends Shop_83GroupByArgs> = Prisma.PrismaPromise<
     Array<
-      PickEnumerable<Shop_xxGroupByOutputType, T['by']> &
+      PickEnumerable<Shop_83GroupByOutputType, T['by']> &
         {
-          [P in ((keyof T) & (keyof Shop_xxGroupByOutputType))]: P extends '_count'
+          [P in ((keyof T) & (keyof Shop_83GroupByOutputType))]: P extends '_count'
             ? T[P] extends boolean
               ? number
-              : GetScalarType<T[P], Shop_xxGroupByOutputType[P]>
-            : GetScalarType<T[P], Shop_xxGroupByOutputType[P]>
+              : GetScalarType<T[P], Shop_83GroupByOutputType[P]>
+            : GetScalarType<T[P], Shop_83GroupByOutputType[P]>
         }
       >
     >
 
 
-  export type Shop_xxSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+  export type Shop_83Select<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
     pid?: boolean
     pname?: boolean
     cat_id?: boolean
     price?: boolean
     img_url?: boolean
     remote_img_url?: boolean
-  }, ExtArgs["result"]["shop_xx"]>
+  }, ExtArgs["result"]["shop_83"]>
 
-  export type Shop_xxSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+  export type Shop_83SelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
     pid?: boolean
     pname?: boolean
     cat_id?: boolean
     price?: boolean
     img_url?: boolean
     remote_img_url?: boolean
-  }, ExtArgs["result"]["shop_xx"]>
+  }, ExtArgs["result"]["shop_83"]>
 
-  export type Shop_xxSelectUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+  export type Shop_83SelectUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
     pid?: boolean
     pname?: boolean
     cat_id?: boolean
     price?: boolean
     img_url?: boolean
     remote_img_url?: boolean
-  }, ExtArgs["result"]["shop_xx"]>
+  }, ExtArgs["result"]["shop_83"]>
 
-  export type Shop_xxSelectScalar = {
+  export type Shop_83SelectScalar = {
     pid?: boolean
     pname?: boolean
     cat_id?: boolean
@@ -6575,10 +6575,10 @@ export namespace Prisma {
     remote_img_url?: boolean
   }
 
-  export type Shop_xxOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"pid" | "pname" | "cat_id" | "price" | "img_url" | "remote_img_url", ExtArgs["result"]["shop_xx"]>
+  export type Shop_83Omit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"pid" | "pname" | "cat_id" | "price" | "img_url" | "remote_img_url", ExtArgs["result"]["shop_83"]>
 
-  export type $Shop_xxPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    name: "Shop_xx"
+  export type $Shop_83Payload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    name: "Shop_83"
     objects: {}
     scalars: $Extensions.GetPayloadResult<{
       pid: number
@@ -6587,136 +6587,136 @@ export namespace Prisma {
       price: number | null
       img_url: string | null
       remote_img_url: string | null
-    }, ExtArgs["result"]["shop_xx"]>
+    }, ExtArgs["result"]["shop_83"]>
     composites: {}
   }
 
-  type Shop_xxGetPayload<S extends boolean | null | undefined | Shop_xxDefaultArgs> = $Result.GetResult<Prisma.$Shop_xxPayload, S>
+  type Shop_83GetPayload<S extends boolean | null | undefined | Shop_83DefaultArgs> = $Result.GetResult<Prisma.$Shop_83Payload, S>
 
-  type Shop_xxCountArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> =
-    Omit<Shop_xxFindManyArgs, 'select' | 'include' | 'distinct' | 'omit'> & {
-      select?: Shop_xxCountAggregateInputType | true
+  type Shop_83CountArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> =
+    Omit<Shop_83FindManyArgs, 'select' | 'include' | 'distinct' | 'omit'> & {
+      select?: Shop_83CountAggregateInputType | true
     }
 
-  export interface Shop_xxDelegate<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> {
-    [K: symbol]: { types: Prisma.TypeMap<ExtArgs>['model']['Shop_xx'], meta: { name: 'Shop_xx' } }
+  export interface Shop_83Delegate<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> {
+    [K: symbol]: { types: Prisma.TypeMap<ExtArgs>['model']['Shop_83'], meta: { name: 'Shop_83' } }
     /**
-     * Find zero or one Shop_xx that matches the filter.
-     * @param {Shop_xxFindUniqueArgs} args - Arguments to find a Shop_xx
+     * Find zero or one Shop_83 that matches the filter.
+     * @param {Shop_83FindUniqueArgs} args - Arguments to find a Shop_83
      * @example
-     * // Get one Shop_xx
-     * const shop_xx = await prisma.shop_xx.findUnique({
+     * // Get one Shop_83
+     * const shop_83 = await prisma.shop_83.findUnique({
      *   where: {
      *     // ... provide filter here
      *   }
      * })
      */
-    findUnique<T extends Shop_xxFindUniqueArgs>(args: SelectSubset<T, Shop_xxFindUniqueArgs<ExtArgs>>): Prisma__Shop_xxClient<$Result.GetResult<Prisma.$Shop_xxPayload<ExtArgs>, T, "findUnique", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
+    findUnique<T extends Shop_83FindUniqueArgs>(args: SelectSubset<T, Shop_83FindUniqueArgs<ExtArgs>>): Prisma__Shop_83Client<$Result.GetResult<Prisma.$Shop_83Payload<ExtArgs>, T, "findUnique", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
 
     /**
-     * Find one Shop_xx that matches the filter or throw an error with `error.code='P2025'`
+     * Find one Shop_83 that matches the filter or throw an error with `error.code='P2025'`
      * if no matches were found.
-     * @param {Shop_xxFindUniqueOrThrowArgs} args - Arguments to find a Shop_xx
+     * @param {Shop_83FindUniqueOrThrowArgs} args - Arguments to find a Shop_83
      * @example
-     * // Get one Shop_xx
-     * const shop_xx = await prisma.shop_xx.findUniqueOrThrow({
+     * // Get one Shop_83
+     * const shop_83 = await prisma.shop_83.findUniqueOrThrow({
      *   where: {
      *     // ... provide filter here
      *   }
      * })
      */
-    findUniqueOrThrow<T extends Shop_xxFindUniqueOrThrowArgs>(args: SelectSubset<T, Shop_xxFindUniqueOrThrowArgs<ExtArgs>>): Prisma__Shop_xxClient<$Result.GetResult<Prisma.$Shop_xxPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+    findUniqueOrThrow<T extends Shop_83FindUniqueOrThrowArgs>(args: SelectSubset<T, Shop_83FindUniqueOrThrowArgs<ExtArgs>>): Prisma__Shop_83Client<$Result.GetResult<Prisma.$Shop_83Payload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
 
     /**
-     * Find the first Shop_xx that matches the filter.
+     * Find the first Shop_83 that matches the filter.
      * Note, that providing `undefined` is treated as the value not being there.
      * Read more here: https://pris.ly/d/null-undefined
-     * @param {Shop_xxFindFirstArgs} args - Arguments to find a Shop_xx
+     * @param {Shop_83FindFirstArgs} args - Arguments to find a Shop_83
      * @example
-     * // Get one Shop_xx
-     * const shop_xx = await prisma.shop_xx.findFirst({
+     * // Get one Shop_83
+     * const shop_83 = await prisma.shop_83.findFirst({
      *   where: {
      *     // ... provide filter here
      *   }
      * })
      */
-    findFirst<T extends Shop_xxFindFirstArgs>(args?: SelectSubset<T, Shop_xxFindFirstArgs<ExtArgs>>): Prisma__Shop_xxClient<$Result.GetResult<Prisma.$Shop_xxPayload<ExtArgs>, T, "findFirst", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
+    findFirst<T extends Shop_83FindFirstArgs>(args?: SelectSubset<T, Shop_83FindFirstArgs<ExtArgs>>): Prisma__Shop_83Client<$Result.GetResult<Prisma.$Shop_83Payload<ExtArgs>, T, "findFirst", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
 
     /**
-     * Find the first Shop_xx that matches the filter or
+     * Find the first Shop_83 that matches the filter or
      * throw `PrismaKnownClientError` with `P2025` code if no matches were found.
      * Note, that providing `undefined` is treated as the value not being there.
      * Read more here: https://pris.ly/d/null-undefined
-     * @param {Shop_xxFindFirstOrThrowArgs} args - Arguments to find a Shop_xx
+     * @param {Shop_83FindFirstOrThrowArgs} args - Arguments to find a Shop_83
      * @example
-     * // Get one Shop_xx
-     * const shop_xx = await prisma.shop_xx.findFirstOrThrow({
+     * // Get one Shop_83
+     * const shop_83 = await prisma.shop_83.findFirstOrThrow({
      *   where: {
      *     // ... provide filter here
      *   }
      * })
      */
-    findFirstOrThrow<T extends Shop_xxFindFirstOrThrowArgs>(args?: SelectSubset<T, Shop_xxFindFirstOrThrowArgs<ExtArgs>>): Prisma__Shop_xxClient<$Result.GetResult<Prisma.$Shop_xxPayload<ExtArgs>, T, "findFirstOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+    findFirstOrThrow<T extends Shop_83FindFirstOrThrowArgs>(args?: SelectSubset<T, Shop_83FindFirstOrThrowArgs<ExtArgs>>): Prisma__Shop_83Client<$Result.GetResult<Prisma.$Shop_83Payload<ExtArgs>, T, "findFirstOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
 
     /**
-     * Find zero or more Shop_xxes that matches the filter.
+     * Find zero or more Shop_83s that matches the filter.
      * Note, that providing `undefined` is treated as the value not being there.
      * Read more here: https://pris.ly/d/null-undefined
-     * @param {Shop_xxFindManyArgs} args - Arguments to filter and select certain fields only.
+     * @param {Shop_83FindManyArgs} args - Arguments to filter and select certain fields only.
      * @example
-     * // Get all Shop_xxes
-     * const shop_xxes = await prisma.shop_xx.findMany()
+     * // Get all Shop_83s
+     * const shop_83s = await prisma.shop_83.findMany()
      * 
-     * // Get first 10 Shop_xxes
-     * const shop_xxes = await prisma.shop_xx.findMany({ take: 10 })
+     * // Get first 10 Shop_83s
+     * const shop_83s = await prisma.shop_83.findMany({ take: 10 })
      * 
      * // Only select the `pid`
-     * const shop_xxWithPidOnly = await prisma.shop_xx.findMany({ select: { pid: true } })
+     * const shop_83WithPidOnly = await prisma.shop_83.findMany({ select: { pid: true } })
      * 
      */
-    findMany<T extends Shop_xxFindManyArgs>(args?: SelectSubset<T, Shop_xxFindManyArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$Shop_xxPayload<ExtArgs>, T, "findMany", GlobalOmitOptions>>
+    findMany<T extends Shop_83FindManyArgs>(args?: SelectSubset<T, Shop_83FindManyArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$Shop_83Payload<ExtArgs>, T, "findMany", GlobalOmitOptions>>
 
     /**
-     * Create a Shop_xx.
-     * @param {Shop_xxCreateArgs} args - Arguments to create a Shop_xx.
+     * Create a Shop_83.
+     * @param {Shop_83CreateArgs} args - Arguments to create a Shop_83.
      * @example
-     * // Create one Shop_xx
-     * const Shop_xx = await prisma.shop_xx.create({
+     * // Create one Shop_83
+     * const Shop_83 = await prisma.shop_83.create({
      *   data: {
-     *     // ... data to create a Shop_xx
+     *     // ... data to create a Shop_83
      *   }
      * })
      * 
      */
-    create<T extends Shop_xxCreateArgs>(args: SelectSubset<T, Shop_xxCreateArgs<ExtArgs>>): Prisma__Shop_xxClient<$Result.GetResult<Prisma.$Shop_xxPayload<ExtArgs>, T, "create", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+    create<T extends Shop_83CreateArgs>(args: SelectSubset<T, Shop_83CreateArgs<ExtArgs>>): Prisma__Shop_83Client<$Result.GetResult<Prisma.$Shop_83Payload<ExtArgs>, T, "create", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
 
     /**
-     * Create many Shop_xxes.
-     * @param {Shop_xxCreateManyArgs} args - Arguments to create many Shop_xxes.
+     * Create many Shop_83s.
+     * @param {Shop_83CreateManyArgs} args - Arguments to create many Shop_83s.
      * @example
-     * // Create many Shop_xxes
-     * const shop_xx = await prisma.shop_xx.createMany({
+     * // Create many Shop_83s
+     * const shop_83 = await prisma.shop_83.createMany({
      *   data: [
      *     // ... provide data here
      *   ]
      * })
      *     
      */
-    createMany<T extends Shop_xxCreateManyArgs>(args?: SelectSubset<T, Shop_xxCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+    createMany<T extends Shop_83CreateManyArgs>(args?: SelectSubset<T, Shop_83CreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
 
     /**
-     * Create many Shop_xxes and returns the data saved in the database.
-     * @param {Shop_xxCreateManyAndReturnArgs} args - Arguments to create many Shop_xxes.
+     * Create many Shop_83s and returns the data saved in the database.
+     * @param {Shop_83CreateManyAndReturnArgs} args - Arguments to create many Shop_83s.
      * @example
-     * // Create many Shop_xxes
-     * const shop_xx = await prisma.shop_xx.createManyAndReturn({
+     * // Create many Shop_83s
+     * const shop_83 = await prisma.shop_83.createManyAndReturn({
      *   data: [
      *     // ... provide data here
      *   ]
      * })
      * 
-     * // Create many Shop_xxes and only return the `pid`
-     * const shop_xxWithPidOnly = await prisma.shop_xx.createManyAndReturn({
+     * // Create many Shop_83s and only return the `pid`
+     * const shop_83WithPidOnly = await prisma.shop_83.createManyAndReturn({
      *   select: { pid: true },
      *   data: [
      *     // ... provide data here
@@ -6726,28 +6726,28 @@ export namespace Prisma {
      * Read more here: https://pris.ly/d/null-undefined
      * 
      */
-    createManyAndReturn<T extends Shop_xxCreateManyAndReturnArgs>(args?: SelectSubset<T, Shop_xxCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$Shop_xxPayload<ExtArgs>, T, "createManyAndReturn", GlobalOmitOptions>>
+    createManyAndReturn<T extends Shop_83CreateManyAndReturnArgs>(args?: SelectSubset<T, Shop_83CreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$Shop_83Payload<ExtArgs>, T, "createManyAndReturn", GlobalOmitOptions>>
 
     /**
-     * Delete a Shop_xx.
-     * @param {Shop_xxDeleteArgs} args - Arguments to delete one Shop_xx.
+     * Delete a Shop_83.
+     * @param {Shop_83DeleteArgs} args - Arguments to delete one Shop_83.
      * @example
-     * // Delete one Shop_xx
-     * const Shop_xx = await prisma.shop_xx.delete({
+     * // Delete one Shop_83
+     * const Shop_83 = await prisma.shop_83.delete({
      *   where: {
-     *     // ... filter to delete one Shop_xx
+     *     // ... filter to delete one Shop_83
      *   }
      * })
      * 
      */
-    delete<T extends Shop_xxDeleteArgs>(args: SelectSubset<T, Shop_xxDeleteArgs<ExtArgs>>): Prisma__Shop_xxClient<$Result.GetResult<Prisma.$Shop_xxPayload<ExtArgs>, T, "delete", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+    delete<T extends Shop_83DeleteArgs>(args: SelectSubset<T, Shop_83DeleteArgs<ExtArgs>>): Prisma__Shop_83Client<$Result.GetResult<Prisma.$Shop_83Payload<ExtArgs>, T, "delete", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
 
     /**
-     * Update one Shop_xx.
-     * @param {Shop_xxUpdateArgs} args - Arguments to update one Shop_xx.
+     * Update one Shop_83.
+     * @param {Shop_83UpdateArgs} args - Arguments to update one Shop_83.
      * @example
-     * // Update one Shop_xx
-     * const shop_xx = await prisma.shop_xx.update({
+     * // Update one Shop_83
+     * const shop_83 = await prisma.shop_83.update({
      *   where: {
      *     // ... provide filter here
      *   },
@@ -6757,30 +6757,30 @@ export namespace Prisma {
      * })
      * 
      */
-    update<T extends Shop_xxUpdateArgs>(args: SelectSubset<T, Shop_xxUpdateArgs<ExtArgs>>): Prisma__Shop_xxClient<$Result.GetResult<Prisma.$Shop_xxPayload<ExtArgs>, T, "update", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+    update<T extends Shop_83UpdateArgs>(args: SelectSubset<T, Shop_83UpdateArgs<ExtArgs>>): Prisma__Shop_83Client<$Result.GetResult<Prisma.$Shop_83Payload<ExtArgs>, T, "update", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
 
     /**
-     * Delete zero or more Shop_xxes.
-     * @param {Shop_xxDeleteManyArgs} args - Arguments to filter Shop_xxes to delete.
+     * Delete zero or more Shop_83s.
+     * @param {Shop_83DeleteManyArgs} args - Arguments to filter Shop_83s to delete.
      * @example
-     * // Delete a few Shop_xxes
-     * const { count } = await prisma.shop_xx.deleteMany({
+     * // Delete a few Shop_83s
+     * const { count } = await prisma.shop_83.deleteMany({
      *   where: {
      *     // ... provide filter here
      *   }
      * })
      * 
      */
-    deleteMany<T extends Shop_xxDeleteManyArgs>(args?: SelectSubset<T, Shop_xxDeleteManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+    deleteMany<T extends Shop_83DeleteManyArgs>(args?: SelectSubset<T, Shop_83DeleteManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
 
     /**
-     * Update zero or more Shop_xxes.
+     * Update zero or more Shop_83s.
      * Note, that providing `undefined` is treated as the value not being there.
      * Read more here: https://pris.ly/d/null-undefined
-     * @param {Shop_xxUpdateManyArgs} args - Arguments to update one or more rows.
+     * @param {Shop_83UpdateManyArgs} args - Arguments to update one or more rows.
      * @example
-     * // Update many Shop_xxes
-     * const shop_xx = await prisma.shop_xx.updateMany({
+     * // Update many Shop_83s
+     * const shop_83 = await prisma.shop_83.updateMany({
      *   where: {
      *     // ... provide filter here
      *   },
@@ -6790,14 +6790,14 @@ export namespace Prisma {
      * })
      * 
      */
-    updateMany<T extends Shop_xxUpdateManyArgs>(args: SelectSubset<T, Shop_xxUpdateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+    updateMany<T extends Shop_83UpdateManyArgs>(args: SelectSubset<T, Shop_83UpdateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
 
     /**
-     * Update zero or more Shop_xxes and returns the data updated in the database.
-     * @param {Shop_xxUpdateManyAndReturnArgs} args - Arguments to update many Shop_xxes.
+     * Update zero or more Shop_83s and returns the data updated in the database.
+     * @param {Shop_83UpdateManyAndReturnArgs} args - Arguments to update many Shop_83s.
      * @example
-     * // Update many Shop_xxes
-     * const shop_xx = await prisma.shop_xx.updateManyAndReturn({
+     * // Update many Shop_83s
+     * const shop_83 = await prisma.shop_83.updateManyAndReturn({
      *   where: {
      *     // ... provide filter here
      *   },
@@ -6806,8 +6806,8 @@ export namespace Prisma {
      *   ]
      * })
      * 
-     * // Update zero or more Shop_xxes and only return the `pid`
-     * const shop_xxWithPidOnly = await prisma.shop_xx.updateManyAndReturn({
+     * // Update zero or more Shop_83s and only return the `pid`
+     * const shop_83WithPidOnly = await prisma.shop_83.updateManyAndReturn({
      *   select: { pid: true },
      *   where: {
      *     // ... provide filter here
@@ -6820,56 +6820,56 @@ export namespace Prisma {
      * Read more here: https://pris.ly/d/null-undefined
      * 
      */
-    updateManyAndReturn<T extends Shop_xxUpdateManyAndReturnArgs>(args: SelectSubset<T, Shop_xxUpdateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$Shop_xxPayload<ExtArgs>, T, "updateManyAndReturn", GlobalOmitOptions>>
+    updateManyAndReturn<T extends Shop_83UpdateManyAndReturnArgs>(args: SelectSubset<T, Shop_83UpdateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$Shop_83Payload<ExtArgs>, T, "updateManyAndReturn", GlobalOmitOptions>>
 
     /**
-     * Create or update one Shop_xx.
-     * @param {Shop_xxUpsertArgs} args - Arguments to update or create a Shop_xx.
+     * Create or update one Shop_83.
+     * @param {Shop_83UpsertArgs} args - Arguments to update or create a Shop_83.
      * @example
-     * // Update or create a Shop_xx
-     * const shop_xx = await prisma.shop_xx.upsert({
+     * // Update or create a Shop_83
+     * const shop_83 = await prisma.shop_83.upsert({
      *   create: {
-     *     // ... data to create a Shop_xx
+     *     // ... data to create a Shop_83
      *   },
      *   update: {
      *     // ... in case it already exists, update
      *   },
      *   where: {
-     *     // ... the filter for the Shop_xx we want to update
+     *     // ... the filter for the Shop_83 we want to update
      *   }
      * })
      */
-    upsert<T extends Shop_xxUpsertArgs>(args: SelectSubset<T, Shop_xxUpsertArgs<ExtArgs>>): Prisma__Shop_xxClient<$Result.GetResult<Prisma.$Shop_xxPayload<ExtArgs>, T, "upsert", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+    upsert<T extends Shop_83UpsertArgs>(args: SelectSubset<T, Shop_83UpsertArgs<ExtArgs>>): Prisma__Shop_83Client<$Result.GetResult<Prisma.$Shop_83Payload<ExtArgs>, T, "upsert", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
 
 
     /**
-     * Count the number of Shop_xxes.
+     * Count the number of Shop_83s.
      * Note, that providing `undefined` is treated as the value not being there.
      * Read more here: https://pris.ly/d/null-undefined
-     * @param {Shop_xxCountArgs} args - Arguments to filter Shop_xxes to count.
+     * @param {Shop_83CountArgs} args - Arguments to filter Shop_83s to count.
      * @example
-     * // Count the number of Shop_xxes
-     * const count = await prisma.shop_xx.count({
+     * // Count the number of Shop_83s
+     * const count = await prisma.shop_83.count({
      *   where: {
-     *     // ... the filter for the Shop_xxes we want to count
+     *     // ... the filter for the Shop_83s we want to count
      *   }
      * })
     **/
-    count<T extends Shop_xxCountArgs>(
-      args?: Subset<T, Shop_xxCountArgs>,
+    count<T extends Shop_83CountArgs>(
+      args?: Subset<T, Shop_83CountArgs>,
     ): Prisma.PrismaPromise<
       T extends $Utils.Record<'select', any>
         ? T['select'] extends true
           ? number
-          : GetScalarType<T['select'], Shop_xxCountAggregateOutputType>
+          : GetScalarType<T['select'], Shop_83CountAggregateOutputType>
         : number
     >
 
     /**
-     * Allows you to perform aggregations operations on a Shop_xx.
+     * Allows you to perform aggregations operations on a Shop_83.
      * Note, that providing `undefined` is treated as the value not being there.
      * Read more here: https://pris.ly/d/null-undefined
-     * @param {Shop_xxAggregateArgs} args - Select which aggregations you would like to apply and on what fields.
+     * @param {Shop_83AggregateArgs} args - Select which aggregations you would like to apply and on what fields.
      * @example
      * // Ordered by age ascending
      * // Where email contains prisma.io
@@ -6889,13 +6889,13 @@ export namespace Prisma {
      *   take: 10,
      * })
     **/
-    aggregate<T extends Shop_xxAggregateArgs>(args: Subset<T, Shop_xxAggregateArgs>): Prisma.PrismaPromise<GetShop_xxAggregateType<T>>
+    aggregate<T extends Shop_83AggregateArgs>(args: Subset<T, Shop_83AggregateArgs>): Prisma.PrismaPromise<GetShop_83AggregateType<T>>
 
     /**
-     * Group by Shop_xx.
+     * Group by Shop_83.
      * Note, that providing `undefined` is treated as the value not being there.
      * Read more here: https://pris.ly/d/null-undefined
-     * @param {Shop_xxGroupByArgs} args - Group by arguments.
+     * @param {Shop_83GroupByArgs} args - Group by arguments.
      * @example
      * // Group by city, order by createdAt, get count
      * const result = await prisma.user.groupBy({
@@ -6910,14 +6910,14 @@ export namespace Prisma {
      * 
     **/
     groupBy<
-      T extends Shop_xxGroupByArgs,
+      T extends Shop_83GroupByArgs,
       HasSelectOrTake extends Or<
         Extends<'skip', Keys<T>>,
         Extends<'take', Keys<T>>
       >,
       OrderByArg extends True extends HasSelectOrTake
-        ? { orderBy: Shop_xxGroupByArgs['orderBy'] }
-        : { orderBy?: Shop_xxGroupByArgs['orderBy'] },
+        ? { orderBy: Shop_83GroupByArgs['orderBy'] }
+        : { orderBy?: Shop_83GroupByArgs['orderBy'] },
       OrderFields extends ExcludeUnderscoreKeys<Keys<MaybeTupleToUnion<T['orderBy']>>>,
       ByFields extends MaybeTupleToUnion<T['by']>,
       ByValid extends Has<ByFields, OrderFields>,
@@ -6966,20 +6966,20 @@ export namespace Prisma {
             ? never
             : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
         }[OrderFields]
-    >(args: SubsetIntersection<T, Shop_xxGroupByArgs, OrderByArg> & InputErrors): {} extends InputErrors ? GetShop_xxGroupByPayload<T> : Prisma.PrismaPromise<InputErrors>
+    >(args: SubsetIntersection<T, Shop_83GroupByArgs, OrderByArg> & InputErrors): {} extends InputErrors ? GetShop_83GroupByPayload<T> : Prisma.PrismaPromise<InputErrors>
   /**
-   * Fields of the Shop_xx model
+   * Fields of the Shop_83 model
    */
-  readonly fields: Shop_xxFieldRefs;
+  readonly fields: Shop_83FieldRefs;
   }
 
   /**
-   * The delegate class that acts as a "Promise-like" for Shop_xx.
+   * The delegate class that acts as a "Promise-like" for Shop_83.
    * Why is this prefixed with `Prisma__`?
    * Because we want to prevent naming conflicts as mentioned in
    * https://github.com/prisma/prisma-client-js/issues/707
    */
-  export interface Prisma__Shop_xxClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> extends Prisma.PrismaPromise<T> {
+  export interface Prisma__Shop_83Client<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> extends Prisma.PrismaPromise<T> {
     readonly [Symbol.toStringTag]: "PrismaPromise"
     /**
      * Attaches callbacks for the resolution and/or rejection of the Promise.
@@ -7007,383 +7007,383 @@ export namespace Prisma {
 
 
   /**
-   * Fields of the Shop_xx model
+   * Fields of the Shop_83 model
    */
-  interface Shop_xxFieldRefs {
-    readonly pid: FieldRef<"Shop_xx", 'Int'>
-    readonly pname: FieldRef<"Shop_xx", 'String'>
-    readonly cat_id: FieldRef<"Shop_xx", 'Int'>
-    readonly price: FieldRef<"Shop_xx", 'Float'>
-    readonly img_url: FieldRef<"Shop_xx", 'String'>
-    readonly remote_img_url: FieldRef<"Shop_xx", 'String'>
+  interface Shop_83FieldRefs {
+    readonly pid: FieldRef<"Shop_83", 'Int'>
+    readonly pname: FieldRef<"Shop_83", 'String'>
+    readonly cat_id: FieldRef<"Shop_83", 'Int'>
+    readonly price: FieldRef<"Shop_83", 'Float'>
+    readonly img_url: FieldRef<"Shop_83", 'String'>
+    readonly remote_img_url: FieldRef<"Shop_83", 'String'>
   }
     
 
   // Custom InputTypes
   /**
-   * Shop_xx findUnique
+   * Shop_83 findUnique
    */
-  export type Shop_xxFindUniqueArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type Shop_83FindUniqueArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * Select specific fields to fetch from the Shop_xx
+     * Select specific fields to fetch from the Shop_83
      */
-    select?: Shop_xxSelect<ExtArgs> | null
+    select?: Shop_83Select<ExtArgs> | null
     /**
-     * Omit specific fields from the Shop_xx
+     * Omit specific fields from the Shop_83
      */
-    omit?: Shop_xxOmit<ExtArgs> | null
+    omit?: Shop_83Omit<ExtArgs> | null
     /**
-     * Filter, which Shop_xx to fetch.
+     * Filter, which Shop_83 to fetch.
      */
-    where: Shop_xxWhereUniqueInput
+    where: Shop_83WhereUniqueInput
   }
 
   /**
-   * Shop_xx findUniqueOrThrow
+   * Shop_83 findUniqueOrThrow
    */
-  export type Shop_xxFindUniqueOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type Shop_83FindUniqueOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * Select specific fields to fetch from the Shop_xx
+     * Select specific fields to fetch from the Shop_83
      */
-    select?: Shop_xxSelect<ExtArgs> | null
+    select?: Shop_83Select<ExtArgs> | null
     /**
-     * Omit specific fields from the Shop_xx
+     * Omit specific fields from the Shop_83
      */
-    omit?: Shop_xxOmit<ExtArgs> | null
+    omit?: Shop_83Omit<ExtArgs> | null
     /**
-     * Filter, which Shop_xx to fetch.
+     * Filter, which Shop_83 to fetch.
      */
-    where: Shop_xxWhereUniqueInput
+    where: Shop_83WhereUniqueInput
   }
 
   /**
-   * Shop_xx findFirst
+   * Shop_83 findFirst
    */
-  export type Shop_xxFindFirstArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type Shop_83FindFirstArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * Select specific fields to fetch from the Shop_xx
+     * Select specific fields to fetch from the Shop_83
      */
-    select?: Shop_xxSelect<ExtArgs> | null
+    select?: Shop_83Select<ExtArgs> | null
     /**
-     * Omit specific fields from the Shop_xx
+     * Omit specific fields from the Shop_83
      */
-    omit?: Shop_xxOmit<ExtArgs> | null
+    omit?: Shop_83Omit<ExtArgs> | null
     /**
-     * Filter, which Shop_xx to fetch.
+     * Filter, which Shop_83 to fetch.
      */
-    where?: Shop_xxWhereInput
+    where?: Shop_83WhereInput
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
      * 
-     * Determine the order of Shop_xxes to fetch.
+     * Determine the order of Shop_83s to fetch.
      */
-    orderBy?: Shop_xxOrderByWithRelationInput | Shop_xxOrderByWithRelationInput[]
+    orderBy?: Shop_83OrderByWithRelationInput | Shop_83OrderByWithRelationInput[]
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
      * 
-     * Sets the position for searching for Shop_xxes.
+     * Sets the position for searching for Shop_83s.
      */
-    cursor?: Shop_xxWhereUniqueInput
+    cursor?: Shop_83WhereUniqueInput
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
      * 
-     * Take `±n` Shop_xxes from the position of the cursor.
+     * Take `±n` Shop_83s from the position of the cursor.
      */
     take?: number
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
      * 
-     * Skip the first `n` Shop_xxes.
+     * Skip the first `n` Shop_83s.
      */
     skip?: number
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
      * 
-     * Filter by unique combinations of Shop_xxes.
+     * Filter by unique combinations of Shop_83s.
      */
-    distinct?: Shop_xxScalarFieldEnum | Shop_xxScalarFieldEnum[]
+    distinct?: Shop_83ScalarFieldEnum | Shop_83ScalarFieldEnum[]
   }
 
   /**
-   * Shop_xx findFirstOrThrow
+   * Shop_83 findFirstOrThrow
    */
-  export type Shop_xxFindFirstOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type Shop_83FindFirstOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * Select specific fields to fetch from the Shop_xx
+     * Select specific fields to fetch from the Shop_83
      */
-    select?: Shop_xxSelect<ExtArgs> | null
+    select?: Shop_83Select<ExtArgs> | null
     /**
-     * Omit specific fields from the Shop_xx
+     * Omit specific fields from the Shop_83
      */
-    omit?: Shop_xxOmit<ExtArgs> | null
+    omit?: Shop_83Omit<ExtArgs> | null
     /**
-     * Filter, which Shop_xx to fetch.
+     * Filter, which Shop_83 to fetch.
      */
-    where?: Shop_xxWhereInput
+    where?: Shop_83WhereInput
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
      * 
-     * Determine the order of Shop_xxes to fetch.
+     * Determine the order of Shop_83s to fetch.
      */
-    orderBy?: Shop_xxOrderByWithRelationInput | Shop_xxOrderByWithRelationInput[]
+    orderBy?: Shop_83OrderByWithRelationInput | Shop_83OrderByWithRelationInput[]
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
      * 
-     * Sets the position for searching for Shop_xxes.
+     * Sets the position for searching for Shop_83s.
      */
-    cursor?: Shop_xxWhereUniqueInput
+    cursor?: Shop_83WhereUniqueInput
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
      * 
-     * Take `±n` Shop_xxes from the position of the cursor.
+     * Take `±n` Shop_83s from the position of the cursor.
      */
     take?: number
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
      * 
-     * Skip the first `n` Shop_xxes.
+     * Skip the first `n` Shop_83s.
      */
     skip?: number
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
      * 
-     * Filter by unique combinations of Shop_xxes.
+     * Filter by unique combinations of Shop_83s.
      */
-    distinct?: Shop_xxScalarFieldEnum | Shop_xxScalarFieldEnum[]
+    distinct?: Shop_83ScalarFieldEnum | Shop_83ScalarFieldEnum[]
   }
 
   /**
-   * Shop_xx findMany
+   * Shop_83 findMany
    */
-  export type Shop_xxFindManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type Shop_83FindManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * Select specific fields to fetch from the Shop_xx
+     * Select specific fields to fetch from the Shop_83
      */
-    select?: Shop_xxSelect<ExtArgs> | null
+    select?: Shop_83Select<ExtArgs> | null
     /**
-     * Omit specific fields from the Shop_xx
+     * Omit specific fields from the Shop_83
      */
-    omit?: Shop_xxOmit<ExtArgs> | null
+    omit?: Shop_83Omit<ExtArgs> | null
     /**
-     * Filter, which Shop_xxes to fetch.
+     * Filter, which Shop_83s to fetch.
      */
-    where?: Shop_xxWhereInput
+    where?: Shop_83WhereInput
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
      * 
-     * Determine the order of Shop_xxes to fetch.
+     * Determine the order of Shop_83s to fetch.
      */
-    orderBy?: Shop_xxOrderByWithRelationInput | Shop_xxOrderByWithRelationInput[]
+    orderBy?: Shop_83OrderByWithRelationInput | Shop_83OrderByWithRelationInput[]
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
      * 
-     * Sets the position for listing Shop_xxes.
+     * Sets the position for listing Shop_83s.
      */
-    cursor?: Shop_xxWhereUniqueInput
+    cursor?: Shop_83WhereUniqueInput
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
      * 
-     * Take `±n` Shop_xxes from the position of the cursor.
+     * Take `±n` Shop_83s from the position of the cursor.
      */
     take?: number
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
      * 
-     * Skip the first `n` Shop_xxes.
+     * Skip the first `n` Shop_83s.
      */
     skip?: number
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
      * 
-     * Filter by unique combinations of Shop_xxes.
+     * Filter by unique combinations of Shop_83s.
      */
-    distinct?: Shop_xxScalarFieldEnum | Shop_xxScalarFieldEnum[]
+    distinct?: Shop_83ScalarFieldEnum | Shop_83ScalarFieldEnum[]
   }
 
   /**
-   * Shop_xx create
+   * Shop_83 create
    */
-  export type Shop_xxCreateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type Shop_83CreateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * Select specific fields to fetch from the Shop_xx
+     * Select specific fields to fetch from the Shop_83
      */
-    select?: Shop_xxSelect<ExtArgs> | null
+    select?: Shop_83Select<ExtArgs> | null
     /**
-     * Omit specific fields from the Shop_xx
+     * Omit specific fields from the Shop_83
      */
-    omit?: Shop_xxOmit<ExtArgs> | null
+    omit?: Shop_83Omit<ExtArgs> | null
     /**
-     * The data needed to create a Shop_xx.
+     * The data needed to create a Shop_83.
      */
-    data?: XOR<Shop_xxCreateInput, Shop_xxUncheckedCreateInput>
+    data?: XOR<Shop_83CreateInput, Shop_83UncheckedCreateInput>
   }
 
   /**
-   * Shop_xx createMany
+   * Shop_83 createMany
    */
-  export type Shop_xxCreateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type Shop_83CreateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * The data used to create many Shop_xxes.
+     * The data used to create many Shop_83s.
      */
-    data: Shop_xxCreateManyInput | Shop_xxCreateManyInput[]
+    data: Shop_83CreateManyInput | Shop_83CreateManyInput[]
     skipDuplicates?: boolean
   }
 
   /**
-   * Shop_xx createManyAndReturn
+   * Shop_83 createManyAndReturn
    */
-  export type Shop_xxCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type Shop_83CreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * Select specific fields to fetch from the Shop_xx
+     * Select specific fields to fetch from the Shop_83
      */
-    select?: Shop_xxSelectCreateManyAndReturn<ExtArgs> | null
+    select?: Shop_83SelectCreateManyAndReturn<ExtArgs> | null
     /**
-     * Omit specific fields from the Shop_xx
+     * Omit specific fields from the Shop_83
      */
-    omit?: Shop_xxOmit<ExtArgs> | null
+    omit?: Shop_83Omit<ExtArgs> | null
     /**
-     * The data used to create many Shop_xxes.
+     * The data used to create many Shop_83s.
      */
-    data: Shop_xxCreateManyInput | Shop_xxCreateManyInput[]
+    data: Shop_83CreateManyInput | Shop_83CreateManyInput[]
     skipDuplicates?: boolean
   }
 
   /**
-   * Shop_xx update
+   * Shop_83 update
    */
-  export type Shop_xxUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type Shop_83UpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * Select specific fields to fetch from the Shop_xx
+     * Select specific fields to fetch from the Shop_83
      */
-    select?: Shop_xxSelect<ExtArgs> | null
+    select?: Shop_83Select<ExtArgs> | null
     /**
-     * Omit specific fields from the Shop_xx
+     * Omit specific fields from the Shop_83
      */
-    omit?: Shop_xxOmit<ExtArgs> | null
+    omit?: Shop_83Omit<ExtArgs> | null
     /**
-     * The data needed to update a Shop_xx.
+     * The data needed to update a Shop_83.
      */
-    data: XOR<Shop_xxUpdateInput, Shop_xxUncheckedUpdateInput>
+    data: XOR<Shop_83UpdateInput, Shop_83UncheckedUpdateInput>
     /**
-     * Choose, which Shop_xx to update.
+     * Choose, which Shop_83 to update.
      */
-    where: Shop_xxWhereUniqueInput
+    where: Shop_83WhereUniqueInput
   }
 
   /**
-   * Shop_xx updateMany
+   * Shop_83 updateMany
    */
-  export type Shop_xxUpdateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type Shop_83UpdateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * The data used to update Shop_xxes.
+     * The data used to update Shop_83s.
      */
-    data: XOR<Shop_xxUpdateManyMutationInput, Shop_xxUncheckedUpdateManyInput>
+    data: XOR<Shop_83UpdateManyMutationInput, Shop_83UncheckedUpdateManyInput>
     /**
-     * Filter which Shop_xxes to update
+     * Filter which Shop_83s to update
      */
-    where?: Shop_xxWhereInput
+    where?: Shop_83WhereInput
     /**
-     * Limit how many Shop_xxes to update.
+     * Limit how many Shop_83s to update.
      */
     limit?: number
   }
 
   /**
-   * Shop_xx updateManyAndReturn
+   * Shop_83 updateManyAndReturn
    */
-  export type Shop_xxUpdateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type Shop_83UpdateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * Select specific fields to fetch from the Shop_xx
+     * Select specific fields to fetch from the Shop_83
      */
-    select?: Shop_xxSelectUpdateManyAndReturn<ExtArgs> | null
+    select?: Shop_83SelectUpdateManyAndReturn<ExtArgs> | null
     /**
-     * Omit specific fields from the Shop_xx
+     * Omit specific fields from the Shop_83
      */
-    omit?: Shop_xxOmit<ExtArgs> | null
+    omit?: Shop_83Omit<ExtArgs> | null
     /**
-     * The data used to update Shop_xxes.
+     * The data used to update Shop_83s.
      */
-    data: XOR<Shop_xxUpdateManyMutationInput, Shop_xxUncheckedUpdateManyInput>
+    data: XOR<Shop_83UpdateManyMutationInput, Shop_83UncheckedUpdateManyInput>
     /**
-     * Filter which Shop_xxes to update
+     * Filter which Shop_83s to update
      */
-    where?: Shop_xxWhereInput
+    where?: Shop_83WhereInput
     /**
-     * Limit how many Shop_xxes to update.
+     * Limit how many Shop_83s to update.
      */
     limit?: number
   }
 
   /**
-   * Shop_xx upsert
+   * Shop_83 upsert
    */
-  export type Shop_xxUpsertArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type Shop_83UpsertArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * Select specific fields to fetch from the Shop_xx
+     * Select specific fields to fetch from the Shop_83
      */
-    select?: Shop_xxSelect<ExtArgs> | null
+    select?: Shop_83Select<ExtArgs> | null
     /**
-     * Omit specific fields from the Shop_xx
+     * Omit specific fields from the Shop_83
      */
-    omit?: Shop_xxOmit<ExtArgs> | null
+    omit?: Shop_83Omit<ExtArgs> | null
     /**
-     * The filter to search for the Shop_xx to update in case it exists.
+     * The filter to search for the Shop_83 to update in case it exists.
      */
-    where: Shop_xxWhereUniqueInput
+    where: Shop_83WhereUniqueInput
     /**
-     * In case the Shop_xx found by the `where` argument doesn't exist, create a new Shop_xx with this data.
+     * In case the Shop_83 found by the `where` argument doesn't exist, create a new Shop_83 with this data.
      */
-    create: XOR<Shop_xxCreateInput, Shop_xxUncheckedCreateInput>
+    create: XOR<Shop_83CreateInput, Shop_83UncheckedCreateInput>
     /**
-     * In case the Shop_xx was found with the provided `where` argument, update it with this data.
+     * In case the Shop_83 was found with the provided `where` argument, update it with this data.
      */
-    update: XOR<Shop_xxUpdateInput, Shop_xxUncheckedUpdateInput>
+    update: XOR<Shop_83UpdateInput, Shop_83UncheckedUpdateInput>
   }
 
   /**
-   * Shop_xx delete
+   * Shop_83 delete
    */
-  export type Shop_xxDeleteArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type Shop_83DeleteArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * Select specific fields to fetch from the Shop_xx
+     * Select specific fields to fetch from the Shop_83
      */
-    select?: Shop_xxSelect<ExtArgs> | null
+    select?: Shop_83Select<ExtArgs> | null
     /**
-     * Omit specific fields from the Shop_xx
+     * Omit specific fields from the Shop_83
      */
-    omit?: Shop_xxOmit<ExtArgs> | null
+    omit?: Shop_83Omit<ExtArgs> | null
     /**
-     * Filter which Shop_xx to delete.
+     * Filter which Shop_83 to delete.
      */
-    where: Shop_xxWhereUniqueInput
+    where: Shop_83WhereUniqueInput
   }
 
   /**
-   * Shop_xx deleteMany
+   * Shop_83 deleteMany
    */
-  export type Shop_xxDeleteManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type Shop_83DeleteManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * Filter which Shop_xxes to delete
+     * Filter which Shop_83s to delete
      */
-    where?: Shop_xxWhereInput
+    where?: Shop_83WhereInput
     /**
-     * Limit how many Shop_xxes to delete.
+     * Limit how many Shop_83s to delete.
      */
     limit?: number
   }
 
   /**
-   * Shop_xx without action
+   * Shop_83 without action
    */
-  export type Shop_xxDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type Shop_83DefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * Select specific fields to fetch from the Shop_xx
+     * Select specific fields to fetch from the Shop_83
      */
-    select?: Shop_xxSelect<ExtArgs> | null
+    select?: Shop_83Select<ExtArgs> | null
     /**
-     * Omit specific fields from the Shop_xx
+     * Omit specific fields from the Shop_83
      */
-    omit?: Shop_xxOmit<ExtArgs> | null
+    omit?: Shop_83Omit<ExtArgs> | null
   }
 
 
@@ -7428,14 +7428,14 @@ export namespace Prisma {
   export type GroceryScalarFieldEnum = (typeof GroceryScalarFieldEnum)[keyof typeof GroceryScalarFieldEnum]
 
 
-  export const Category_xxScalarFieldEnum: {
+  export const Category_83ScalarFieldEnum: {
     cid: 'cid',
     cname: 'cname',
     size: 'size',
     image_url: 'image_url'
   };
 
-  export type Category_xxScalarFieldEnum = (typeof Category_xxScalarFieldEnum)[keyof typeof Category_xxScalarFieldEnum]
+  export type Category_83ScalarFieldEnum = (typeof Category_83ScalarFieldEnum)[keyof typeof Category_83ScalarFieldEnum]
 
 
   export const BlogScalarFieldEnum: {
@@ -7449,7 +7449,7 @@ export namespace Prisma {
   export type BlogScalarFieldEnum = (typeof BlogScalarFieldEnum)[keyof typeof BlogScalarFieldEnum]
 
 
-  export const Shop_xxScalarFieldEnum: {
+  export const Shop_83ScalarFieldEnum: {
     pid: 'pid',
     pname: 'pname',
     cat_id: 'cat_id',
@@ -7458,7 +7458,7 @@ export namespace Prisma {
     remote_img_url: 'remote_img_url'
   };
 
-  export type Shop_xxScalarFieldEnum = (typeof Shop_xxScalarFieldEnum)[keyof typeof Shop_xxScalarFieldEnum]
+  export type Shop_83ScalarFieldEnum = (typeof Shop_83ScalarFieldEnum)[keyof typeof Shop_83ScalarFieldEnum]
 
 
   export const SortOrder: {
@@ -7672,53 +7672,53 @@ export namespace Prisma {
     completed?: BoolWithAggregatesFilter<"Grocery"> | boolean
   }
 
-  export type Category_xxWhereInput = {
-    AND?: Category_xxWhereInput | Category_xxWhereInput[]
-    OR?: Category_xxWhereInput[]
-    NOT?: Category_xxWhereInput | Category_xxWhereInput[]
-    cid?: IntFilter<"Category_xx"> | number
-    cname?: StringFilter<"Category_xx"> | string
-    size?: StringNullableFilter<"Category_xx"> | string | null
-    image_url?: StringNullableFilter<"Category_xx"> | string | null
+  export type Category_83WhereInput = {
+    AND?: Category_83WhereInput | Category_83WhereInput[]
+    OR?: Category_83WhereInput[]
+    NOT?: Category_83WhereInput | Category_83WhereInput[]
+    cid?: IntFilter<"Category_83"> | number
+    cname?: StringFilter<"Category_83"> | string
+    size?: StringNullableFilter<"Category_83"> | string | null
+    image_url?: StringNullableFilter<"Category_83"> | string | null
   }
 
-  export type Category_xxOrderByWithRelationInput = {
+  export type Category_83OrderByWithRelationInput = {
     cid?: SortOrder
     cname?: SortOrder
     size?: SortOrderInput | SortOrder
     image_url?: SortOrderInput | SortOrder
   }
 
-  export type Category_xxWhereUniqueInput = Prisma.AtLeast<{
+  export type Category_83WhereUniqueInput = Prisma.AtLeast<{
     cid?: number
-    AND?: Category_xxWhereInput | Category_xxWhereInput[]
-    OR?: Category_xxWhereInput[]
-    NOT?: Category_xxWhereInput | Category_xxWhereInput[]
-    cname?: StringFilter<"Category_xx"> | string
-    size?: StringNullableFilter<"Category_xx"> | string | null
-    image_url?: StringNullableFilter<"Category_xx"> | string | null
+    AND?: Category_83WhereInput | Category_83WhereInput[]
+    OR?: Category_83WhereInput[]
+    NOT?: Category_83WhereInput | Category_83WhereInput[]
+    cname?: StringFilter<"Category_83"> | string
+    size?: StringNullableFilter<"Category_83"> | string | null
+    image_url?: StringNullableFilter<"Category_83"> | string | null
   }, "cid">
 
-  export type Category_xxOrderByWithAggregationInput = {
+  export type Category_83OrderByWithAggregationInput = {
     cid?: SortOrder
     cname?: SortOrder
     size?: SortOrderInput | SortOrder
     image_url?: SortOrderInput | SortOrder
-    _count?: Category_xxCountOrderByAggregateInput
-    _avg?: Category_xxAvgOrderByAggregateInput
-    _max?: Category_xxMaxOrderByAggregateInput
-    _min?: Category_xxMinOrderByAggregateInput
-    _sum?: Category_xxSumOrderByAggregateInput
+    _count?: Category_83CountOrderByAggregateInput
+    _avg?: Category_83AvgOrderByAggregateInput
+    _max?: Category_83MaxOrderByAggregateInput
+    _min?: Category_83MinOrderByAggregateInput
+    _sum?: Category_83SumOrderByAggregateInput
   }
 
-  export type Category_xxScalarWhereWithAggregatesInput = {
-    AND?: Category_xxScalarWhereWithAggregatesInput | Category_xxScalarWhereWithAggregatesInput[]
-    OR?: Category_xxScalarWhereWithAggregatesInput[]
-    NOT?: Category_xxScalarWhereWithAggregatesInput | Category_xxScalarWhereWithAggregatesInput[]
-    cid?: IntWithAggregatesFilter<"Category_xx"> | number
-    cname?: StringWithAggregatesFilter<"Category_xx"> | string
-    size?: StringNullableWithAggregatesFilter<"Category_xx"> | string | null
-    image_url?: StringNullableWithAggregatesFilter<"Category_xx"> | string | null
+  export type Category_83ScalarWhereWithAggregatesInput = {
+    AND?: Category_83ScalarWhereWithAggregatesInput | Category_83ScalarWhereWithAggregatesInput[]
+    OR?: Category_83ScalarWhereWithAggregatesInput[]
+    NOT?: Category_83ScalarWhereWithAggregatesInput | Category_83ScalarWhereWithAggregatesInput[]
+    cid?: IntWithAggregatesFilter<"Category_83"> | number
+    cname?: StringWithAggregatesFilter<"Category_83"> | string
+    size?: StringNullableWithAggregatesFilter<"Category_83"> | string | null
+    image_url?: StringNullableWithAggregatesFilter<"Category_83"> | string | null
   }
 
   export type BlogWhereInput = {
@@ -7773,19 +7773,19 @@ export namespace Prisma {
     img?: StringWithAggregatesFilter<"Blog"> | string
   }
 
-  export type Shop_xxWhereInput = {
-    AND?: Shop_xxWhereInput | Shop_xxWhereInput[]
-    OR?: Shop_xxWhereInput[]
-    NOT?: Shop_xxWhereInput | Shop_xxWhereInput[]
-    pid?: IntFilter<"Shop_xx"> | number
-    pname?: StringNullableFilter<"Shop_xx"> | string | null
-    cat_id?: IntNullableFilter<"Shop_xx"> | number | null
-    price?: FloatNullableFilter<"Shop_xx"> | number | null
-    img_url?: StringNullableFilter<"Shop_xx"> | string | null
-    remote_img_url?: StringNullableFilter<"Shop_xx"> | string | null
+  export type Shop_83WhereInput = {
+    AND?: Shop_83WhereInput | Shop_83WhereInput[]
+    OR?: Shop_83WhereInput[]
+    NOT?: Shop_83WhereInput | Shop_83WhereInput[]
+    pid?: IntFilter<"Shop_83"> | number
+    pname?: StringNullableFilter<"Shop_83"> | string | null
+    cat_id?: IntNullableFilter<"Shop_83"> | number | null
+    price?: FloatNullableFilter<"Shop_83"> | number | null
+    img_url?: StringNullableFilter<"Shop_83"> | string | null
+    remote_img_url?: StringNullableFilter<"Shop_83"> | string | null
   }
 
-  export type Shop_xxOrderByWithRelationInput = {
+  export type Shop_83OrderByWithRelationInput = {
     pid?: SortOrder
     pname?: SortOrderInput | SortOrder
     cat_id?: SortOrderInput | SortOrder
@@ -7794,42 +7794,42 @@ export namespace Prisma {
     remote_img_url?: SortOrderInput | SortOrder
   }
 
-  export type Shop_xxWhereUniqueInput = Prisma.AtLeast<{
+  export type Shop_83WhereUniqueInput = Prisma.AtLeast<{
     pid?: number
-    AND?: Shop_xxWhereInput | Shop_xxWhereInput[]
-    OR?: Shop_xxWhereInput[]
-    NOT?: Shop_xxWhereInput | Shop_xxWhereInput[]
-    pname?: StringNullableFilter<"Shop_xx"> | string | null
-    cat_id?: IntNullableFilter<"Shop_xx"> | number | null
-    price?: FloatNullableFilter<"Shop_xx"> | number | null
-    img_url?: StringNullableFilter<"Shop_xx"> | string | null
-    remote_img_url?: StringNullableFilter<"Shop_xx"> | string | null
+    AND?: Shop_83WhereInput | Shop_83WhereInput[]
+    OR?: Shop_83WhereInput[]
+    NOT?: Shop_83WhereInput | Shop_83WhereInput[]
+    pname?: StringNullableFilter<"Shop_83"> | string | null
+    cat_id?: IntNullableFilter<"Shop_83"> | number | null
+    price?: FloatNullableFilter<"Shop_83"> | number | null
+    img_url?: StringNullableFilter<"Shop_83"> | string | null
+    remote_img_url?: StringNullableFilter<"Shop_83"> | string | null
   }, "pid">
 
-  export type Shop_xxOrderByWithAggregationInput = {
+  export type Shop_83OrderByWithAggregationInput = {
     pid?: SortOrder
     pname?: SortOrderInput | SortOrder
     cat_id?: SortOrderInput | SortOrder
     price?: SortOrderInput | SortOrder
     img_url?: SortOrderInput | SortOrder
     remote_img_url?: SortOrderInput | SortOrder
-    _count?: Shop_xxCountOrderByAggregateInput
-    _avg?: Shop_xxAvgOrderByAggregateInput
-    _max?: Shop_xxMaxOrderByAggregateInput
-    _min?: Shop_xxMinOrderByAggregateInput
-    _sum?: Shop_xxSumOrderByAggregateInput
+    _count?: Shop_83CountOrderByAggregateInput
+    _avg?: Shop_83AvgOrderByAggregateInput
+    _max?: Shop_83MaxOrderByAggregateInput
+    _min?: Shop_83MinOrderByAggregateInput
+    _sum?: Shop_83SumOrderByAggregateInput
   }
 
-  export type Shop_xxScalarWhereWithAggregatesInput = {
-    AND?: Shop_xxScalarWhereWithAggregatesInput | Shop_xxScalarWhereWithAggregatesInput[]
-    OR?: Shop_xxScalarWhereWithAggregatesInput[]
-    NOT?: Shop_xxScalarWhereWithAggregatesInput | Shop_xxScalarWhereWithAggregatesInput[]
-    pid?: IntWithAggregatesFilter<"Shop_xx"> | number
-    pname?: StringNullableWithAggregatesFilter<"Shop_xx"> | string | null
-    cat_id?: IntNullableWithAggregatesFilter<"Shop_xx"> | number | null
-    price?: FloatNullableWithAggregatesFilter<"Shop_xx"> | number | null
-    img_url?: StringNullableWithAggregatesFilter<"Shop_xx"> | string | null
-    remote_img_url?: StringNullableWithAggregatesFilter<"Shop_xx"> | string | null
+  export type Shop_83ScalarWhereWithAggregatesInput = {
+    AND?: Shop_83ScalarWhereWithAggregatesInput | Shop_83ScalarWhereWithAggregatesInput[]
+    OR?: Shop_83ScalarWhereWithAggregatesInput[]
+    NOT?: Shop_83ScalarWhereWithAggregatesInput | Shop_83ScalarWhereWithAggregatesInput[]
+    pid?: IntWithAggregatesFilter<"Shop_83"> | number
+    pname?: StringNullableWithAggregatesFilter<"Shop_83"> | string | null
+    cat_id?: IntNullableWithAggregatesFilter<"Shop_83"> | number | null
+    price?: FloatNullableWithAggregatesFilter<"Shop_83"> | number | null
+    img_url?: StringNullableWithAggregatesFilter<"Shop_83"> | string | null
+    remote_img_url?: StringNullableWithAggregatesFilter<"Shop_83"> | string | null
   }
 
   export type UserCreateInput = {
@@ -7952,46 +7952,46 @@ export namespace Prisma {
     completed?: BoolFieldUpdateOperationsInput | boolean
   }
 
-  export type Category_xxCreateInput = {
+  export type Category_83CreateInput = {
     cname: string
     size?: string | null
     image_url?: string | null
   }
 
-  export type Category_xxUncheckedCreateInput = {
+  export type Category_83UncheckedCreateInput = {
     cid?: number
     cname: string
     size?: string | null
     image_url?: string | null
   }
 
-  export type Category_xxUpdateInput = {
+  export type Category_83UpdateInput = {
     cname?: StringFieldUpdateOperationsInput | string
     size?: NullableStringFieldUpdateOperationsInput | string | null
     image_url?: NullableStringFieldUpdateOperationsInput | string | null
   }
 
-  export type Category_xxUncheckedUpdateInput = {
+  export type Category_83UncheckedUpdateInput = {
     cid?: IntFieldUpdateOperationsInput | number
     cname?: StringFieldUpdateOperationsInput | string
     size?: NullableStringFieldUpdateOperationsInput | string | null
     image_url?: NullableStringFieldUpdateOperationsInput | string | null
   }
 
-  export type Category_xxCreateManyInput = {
+  export type Category_83CreateManyInput = {
     cid?: number
     cname: string
     size?: string | null
     image_url?: string | null
   }
 
-  export type Category_xxUpdateManyMutationInput = {
+  export type Category_83UpdateManyMutationInput = {
     cname?: StringFieldUpdateOperationsInput | string
     size?: NullableStringFieldUpdateOperationsInput | string | null
     image_url?: NullableStringFieldUpdateOperationsInput | string | null
   }
 
-  export type Category_xxUncheckedUpdateManyInput = {
+  export type Category_83UncheckedUpdateManyInput = {
     cid?: IntFieldUpdateOperationsInput | number
     cname?: StringFieldUpdateOperationsInput | string
     size?: NullableStringFieldUpdateOperationsInput | string | null
@@ -8054,7 +8054,7 @@ export namespace Prisma {
     img?: StringFieldUpdateOperationsInput | string
   }
 
-  export type Shop_xxCreateInput = {
+  export type Shop_83CreateInput = {
     pname?: string | null
     cat_id?: number | null
     price?: number | null
@@ -8062,7 +8062,7 @@ export namespace Prisma {
     remote_img_url?: string | null
   }
 
-  export type Shop_xxUncheckedCreateInput = {
+  export type Shop_83UncheckedCreateInput = {
     pid?: number
     pname?: string | null
     cat_id?: number | null
@@ -8071,7 +8071,7 @@ export namespace Prisma {
     remote_img_url?: string | null
   }
 
-  export type Shop_xxUpdateInput = {
+  export type Shop_83UpdateInput = {
     pname?: NullableStringFieldUpdateOperationsInput | string | null
     cat_id?: NullableIntFieldUpdateOperationsInput | number | null
     price?: NullableFloatFieldUpdateOperationsInput | number | null
@@ -8079,7 +8079,7 @@ export namespace Prisma {
     remote_img_url?: NullableStringFieldUpdateOperationsInput | string | null
   }
 
-  export type Shop_xxUncheckedUpdateInput = {
+  export type Shop_83UncheckedUpdateInput = {
     pid?: IntFieldUpdateOperationsInput | number
     pname?: NullableStringFieldUpdateOperationsInput | string | null
     cat_id?: NullableIntFieldUpdateOperationsInput | number | null
@@ -8088,7 +8088,7 @@ export namespace Prisma {
     remote_img_url?: NullableStringFieldUpdateOperationsInput | string | null
   }
 
-  export type Shop_xxCreateManyInput = {
+  export type Shop_83CreateManyInput = {
     pid?: number
     pname?: string | null
     cat_id?: number | null
@@ -8097,7 +8097,7 @@ export namespace Prisma {
     remote_img_url?: string | null
   }
 
-  export type Shop_xxUpdateManyMutationInput = {
+  export type Shop_83UpdateManyMutationInput = {
     pname?: NullableStringFieldUpdateOperationsInput | string | null
     cat_id?: NullableIntFieldUpdateOperationsInput | number | null
     price?: NullableFloatFieldUpdateOperationsInput | number | null
@@ -8105,7 +8105,7 @@ export namespace Prisma {
     remote_img_url?: NullableStringFieldUpdateOperationsInput | string | null
   }
 
-  export type Shop_xxUncheckedUpdateManyInput = {
+  export type Shop_83UncheckedUpdateManyInput = {
     pid?: IntFieldUpdateOperationsInput | number
     pname?: NullableStringFieldUpdateOperationsInput | string | null
     cat_id?: NullableIntFieldUpdateOperationsInput | number | null
@@ -8295,32 +8295,32 @@ export namespace Prisma {
     _max?: NestedBoolFilter<$PrismaModel>
   }
 
-  export type Category_xxCountOrderByAggregateInput = {
+  export type Category_83CountOrderByAggregateInput = {
     cid?: SortOrder
     cname?: SortOrder
     size?: SortOrder
     image_url?: SortOrder
   }
 
-  export type Category_xxAvgOrderByAggregateInput = {
+  export type Category_83AvgOrderByAggregateInput = {
     cid?: SortOrder
   }
 
-  export type Category_xxMaxOrderByAggregateInput = {
-    cid?: SortOrder
-    cname?: SortOrder
-    size?: SortOrder
-    image_url?: SortOrder
-  }
-
-  export type Category_xxMinOrderByAggregateInput = {
+  export type Category_83MaxOrderByAggregateInput = {
     cid?: SortOrder
     cname?: SortOrder
     size?: SortOrder
     image_url?: SortOrder
   }
 
-  export type Category_xxSumOrderByAggregateInput = {
+  export type Category_83MinOrderByAggregateInput = {
+    cid?: SortOrder
+    cname?: SortOrder
+    size?: SortOrder
+    image_url?: SortOrder
+  }
+
+  export type Category_83SumOrderByAggregateInput = {
     cid?: SortOrder
   }
 
@@ -8370,7 +8370,7 @@ export namespace Prisma {
     not?: NestedFloatNullableFilter<$PrismaModel> | number | null
   }
 
-  export type Shop_xxCountOrderByAggregateInput = {
+  export type Shop_83CountOrderByAggregateInput = {
     pid?: SortOrder
     pname?: SortOrder
     cat_id?: SortOrder
@@ -8379,22 +8379,13 @@ export namespace Prisma {
     remote_img_url?: SortOrder
   }
 
-  export type Shop_xxAvgOrderByAggregateInput = {
+  export type Shop_83AvgOrderByAggregateInput = {
     pid?: SortOrder
     cat_id?: SortOrder
     price?: SortOrder
   }
 
-  export type Shop_xxMaxOrderByAggregateInput = {
-    pid?: SortOrder
-    pname?: SortOrder
-    cat_id?: SortOrder
-    price?: SortOrder
-    img_url?: SortOrder
-    remote_img_url?: SortOrder
-  }
-
-  export type Shop_xxMinOrderByAggregateInput = {
+  export type Shop_83MaxOrderByAggregateInput = {
     pid?: SortOrder
     pname?: SortOrder
     cat_id?: SortOrder
@@ -8403,7 +8394,16 @@ export namespace Prisma {
     remote_img_url?: SortOrder
   }
 
-  export type Shop_xxSumOrderByAggregateInput = {
+  export type Shop_83MinOrderByAggregateInput = {
+    pid?: SortOrder
+    pname?: SortOrder
+    cat_id?: SortOrder
+    price?: SortOrder
+    img_url?: SortOrder
+    remote_img_url?: SortOrder
+  }
+
+  export type Shop_83SumOrderByAggregateInput = {
     pid?: SortOrder
     cat_id?: SortOrder
     price?: SortOrder

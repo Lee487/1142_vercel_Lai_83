@@ -29,7 +29,7 @@ model Grocery {
   completed Boolean @default(false)
 }
 
-model Category_xx {
+model Category_83 {
   cid       Int     @id @default(autoincrement())
   cname     String
   size      String?
@@ -44,7 +44,7 @@ model Blog {
   img      String
 }
 
-model Shop_xx {
+model Shop_83 {
   pid            Int     @id @default(autoincrement())
   pname          String?
   cat_id         Int?

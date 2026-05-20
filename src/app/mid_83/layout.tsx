@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from "next/font/google";
-import Navbar_xx from './_components/NavbarShopNode_xx';
+import Navbar_83 from './_components/NavbarShopNode_83';
 import StyledComponentsRegistry from '@/lib/registry';
 import '../globals.css';
 
@@ -29,7 +29,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white text-black`}
       >
-        <Navbar_xx />
+        <Navbar_83 />
         <StyledComponentsRegistry>
           {children}
         </StyledComponentsRegistry>

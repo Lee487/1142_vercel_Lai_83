@@ -1,23 +1,23 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import Product_xx from '../../_components/Product_xx';
-import Wrapper from '../../_assets/wrappers/Shop_xx';
+import Product_83 from '../../_components/Product_83';
+import Wrapper from '../../_assets/wrappers/Shop_83';
 
 import { useParams } from 'next/navigation';
 
-const FetchProductsByCategory_xx = () => {
-  const [shop_xx, setShop_xx] = useState([]);
+const FetchProductsByCategory_83 = () => {
+  const [shop_83, setShop_83] = useState([]);
   const params = useParams();
   const cat = params.category;
 
   const fetchProductsFromNode = async () => {
     try {
-      const response = await fetch(`http://localhost:5000/api/shop_xx/${cat}`);
+      const response = await fetch(`http://localhost:5000/api/shop_83/${cat}`);
       const data = await response.json();
-      console.log('shop_xx data', data);
+      console.log('shop_83 data', data);
       if (data.length !== 0) {
-        setShop_xx(data);
+        setShop_83(data);
       }
     } catch (error) {
       console.log(error);
@@ -37,10 +37,10 @@ const FetchProductsByCategory_xx = () => {
         <div className='collection-page'>
           <h1 className='title capitalize'>{cat}</h1>
           <div className='items'>
-            {shop_xx?.map((item) => {
+            {shop_83?.map((item) => {
               const { id, img_url, name, price } = item;
               return (
-                <Product_xx
+                <Product_83
                   key={id}
                   img_url={img_url}
                   name={name}
@@ -55,4 +55,4 @@ const FetchProductsByCategory_xx = () => {
   );
 };
 
-export default FetchProductsByCategory_xx;
+export default FetchProductsByCategory_83;

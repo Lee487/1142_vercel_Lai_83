@@ -1,12 +1,12 @@
-import { deleteProduct_xx } from '@/actions/shop.action_xx';
+import { deleteProduct_83 } from '@/actions/shop.action_83';
 
 type DeleteProductProps = {
   pid: number;
 };
 
-const DeleteProduct_xx = ({ pid }: DeleteProductProps) => {
+const DeleteProduct_83 = ({ pid }: DeleteProductProps) => {
   return (
-    <form action={deleteProduct_xx}>
+    <form action={deleteProduct_83}>
       <input type='hidden' name='id' value={pid} />
       <button
         type='submit'
@@ -18,4 +18,4 @@ const DeleteProduct_xx = ({ pid }: DeleteProductProps) => {
   );
 };
 
-export default DeleteProduct_xx;
+export default DeleteProduct_83;

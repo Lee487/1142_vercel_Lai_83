@@ -1,6 +1,6 @@
-import DeleteProduct_xx from './DeleteProduct_xx';
+import DeleteProduct_83 from './DeleteProduct_83';
 
-const Product_xx = ({ img_url, pname, name, price, pid }) => {
+const Product_83 = ({ img_url, pname, name, price, pid }) => {
   const displayName = pname || name;
   return (
     <div className='collection-item'>
@@ -11,9 +11,9 @@ const Product_xx = ({ img_url, pname, name, price, pid }) => {
       </div>
       <div className='flex justify-between items-center gap-4 custom-button'>
         <button>Add to Cart</button>
-        <DeleteProduct_xx pid={pid} />
+        <DeleteProduct_83 pid={pid} />
       </div>
     </div>
   );
 };
-export default Product_xx;
+export default Product_83;
