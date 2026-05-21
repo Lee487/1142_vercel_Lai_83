@@ -35,8 +35,8 @@ const StaticPage_83 = async () => {
                     className='background-image'
                     src={image_url || '/default.jpg'}
                     alt={cname || ''}
-                    width={500}
-                    height={500}
+                    fill
+                    style={{ objectFit: 'cover' }}
                   />
                   <Link href={`/mid_83/${cname}`} className='content'>
                     <h1 className='title'>{item.cname}</h1>

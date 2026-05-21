@@ -1,6 +1,7 @@
 import Wrapper from '../_assets/wrappers/Shop_83';
 import NavbarShop_83 from '../_components/NavbarShopNode_83';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const ShopNodeMainPage_83 = () => {
   return (
@@ -12,10 +13,12 @@ const ShopNodeMainPage_83 = () => {
         <div className='homepage'>
           <div className='directory-menu'>
             <div className='menu-item'>
-              <img
+              <Image
                 className='background-image'
-                src='/images/midterm/homepage/hats.png'
-                alt=''
+                src='/w11-p1-1.png'
+                alt='HATS'
+                fill
+                style={{ objectFit: 'cover' }}
               />
               <Link href='/mid_83/static/hats' className='content'>
                 <h1 className='title'>HATS</h1>
@@ -23,10 +26,12 @@ const ShopNodeMainPage_83 = () => {
               </Link>
             </div>
             <div className='menu-item'>
-              <img
+              <Image
                 className='background-image'
-                src='/images/midterm/homepage/jackets.png'
-                alt=''
+                src='/w11-p1-2.png'
+                alt='JACKETS'
+                fill
+                style={{ objectFit: 'cover' }}
               />
               <Link href='/mid_83/static/jackets' className='content'>
                 <h1 className='title'>JACKETS</h1>
@@ -34,10 +39,12 @@ const ShopNodeMainPage_83 = () => {
               </Link>
             </div>
             <div className='menu-item'>
-              <img
+              <Image
                 className='background-image'
-                src='/images/midterm/homepage/sneakers.png'
-                alt=''
+                src='/w11-p1-3.png'
+                alt='SNEAKERS'
+                fill
+                style={{ objectFit: 'cover' }}
               />
               <Link href='/mid_83/static/sneakers' className='content'>
                 <h1 className='title'>SNEAKERS</h1>
@@ -45,10 +52,12 @@ const ShopNodeMainPage_83 = () => {
               </Link>
             </div>
             <div className='large menu-item'>
-              <img
+              <Image
                 className='background-image'
-                src='/images/midterm/homepage/womens.png'
-                alt=''
+                src='/w11-p1-4.png'
+                alt='WOMENS'
+                fill
+                style={{ objectFit: 'cover' }}
               />
               <Link href='/mid_83/static/womens' className='content'>
                 <h1 className='title'>WOMENS</h1>
@@ -56,10 +65,12 @@ const ShopNodeMainPage_83 = () => {
               </Link>
             </div>
             <div className='large menu-item'>
-              <img
+              <Image
                 className='background-image'
-                src='/images/midterm/homepage/mens.png'
-                alt=''
+                src='/w11-p1-5.png'
+                alt='MENS'
+                fill
+                style={{ objectFit: 'cover' }}
               />
               <Link href='/mid_83/static/mens' className='content'>
                 <h1 className='title'>MENS</h1>
