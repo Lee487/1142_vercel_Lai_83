@@ -161,6 +161,7 @@ const Wrapper = styled.div`
         border: 1px solid black;
         margin: 7px;
         overflow: hidden;
+        position: relative;
 
         &:hover {
           cursor: pointer;
@@ -216,7 +217,7 @@ const Wrapper = styled.div`
             font-weight: bold;
             font-size: 20px;
             color: #4a4a4a;
-            text-transform: capitalize;
+            text-transform: uppercase;
           }
 
           .subtitle {

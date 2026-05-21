@@ -11,20 +11,19 @@ const FetchProductsByCategory_83 = () => {
   const params = useParams();
   const cat = params.category;
 
-  const fetchProductsFromNode = async () => {
-    try {
-      const response = await fetch(`http://localhost:5000/api/shop_83/${cat}`);
-      const data = await response.json();
-      console.log('shop_83 data', data);
-      if (data.length !== 0) {
-        setShop_83(data);
-      }
-    } catch (error) {
-      console.log(error);
-    }
-  };
-
   useEffect(() => {
+    const fetchProductsFromNode = async () => {
+      try {
+        const response = await fetch(`http://localhost:5000/api/shop_83/${cat}`);
+        const data = await response.json();
+        console.log('shop_83 data', data);
+        if (data.length !== 0) {
+          setShop_83(data);
+        }
+      } catch (error) {
+        console.log(error);
+      }
+    };
     fetchProductsFromNode();
   }, [cat]);
 
@@ -42,6 +41,7 @@ const FetchProductsByCategory_83 = () => {
               return (
                 <Product_83
                   key={id}
+                  pid={id}
                   img_url={img_url}
                   name={name}
                   price={price}

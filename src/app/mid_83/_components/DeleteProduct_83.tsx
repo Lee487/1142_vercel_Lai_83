@@ -1,4 +1,4 @@
-import { deleteProduct_83 } from '@/actions/shop.action_83';
+import { deleteProduct_83 } from '@/action/shop.action_83';
 
 type DeleteProductProps = {
   pid: number;

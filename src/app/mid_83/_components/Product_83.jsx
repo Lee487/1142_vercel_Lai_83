@@ -1,10 +1,17 @@
 import DeleteProduct_83 from './DeleteProduct_83';
+import Image from 'next/image';
 
 const Product_83 = ({ img_url, pname, name, price, pid }) => {
   const displayName = pname || name;
   return (
     <div className='collection-item'>
-      <img className='image' src={img_url} />
+      <Image
+        className='image'
+        src={img_url}
+        alt={displayName}
+        width={300}
+        height={350}
+      />
       <div className='collection-footer'>
         <span className='name'>{displayName}</span>
         <span className='price'>{price}</span>

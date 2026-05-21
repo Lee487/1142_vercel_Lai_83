@@ -50,7 +50,7 @@ const FetchProductsByCategory_83 = async ({
                   <Product_83
                     key={pid}
                     pid={pid}
-                    img_url={img_url}
+                    img_url={img_url || ''}
                     pname={pname}
                     name={pname}
                     price={price}

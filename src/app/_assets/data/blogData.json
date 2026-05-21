@@ -5,7 +5,7 @@
     "descrip": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "category": "lifestyle",
     "img": "/images/photo-1.jpg",
-    "remote_url": "https://erogcveccbzsyhbgputf.supabase.co/storage/v1/object/public/demo-xx/card-xx/photo-1.jpg"
+    "remote_url": "https://erogcveccbzsyhbgputf.supabase.co/storage/v1/object/public/demo-83/card-83/photo-1.jpg"
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@
     "descrip": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "category": "travel",
     "img": "/images/photo-2.jpg",
-    "remote_url": "https://erogcveccbzsyhbgputf.supabase.co/storage/v1/object/public/demo-xx/card-xx/photo-2.jpg"
+    "remote_url": "https://erogcveccbzsyhbgputf.supabase.co/storage/v1/object/public/demo-83/card-83/photo-2.jpg"
   },
   {
     "id": 3,
@@ -21,7 +21,7 @@
     "descrip": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "category": "lifestyle",
     "img": "/images/photo-3.jpg",
-    "remote_url": "https://erogcveccbzsyhbgputf.supabase.co/storage/v1/object/public/demo-xx/card-xx/photo-3.jpg"
+    "remote_url": "https://erogcveccbzsyhbgputf.supabase.co/storage/v1/object/public/demo-83/card-83/photo-3.jpg"
   },
   {
     "id": 4,
@@ -29,7 +29,7 @@
     "descrip": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "category": "lifestyle",
     "img": "/images/photo-4.jpg",
-    "remote_url": "https://erogcveccbzsyhbgputf.supabase.co/storage/v1/object/public/demo-xx/card-xx/photo-4.jpg"
+    "remote_url": "https://erogcveccbzsyhbgputf.supabase.co/storage/v1/object/public/demo-83/card-83/photo-4.jpg"
   },
   {
     "id": 5,
@@ -37,7 +37,7 @@
     "descrip": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "category": "lifestyle",
     "img": "/images/photo-5.jpg",
-    "remote_url": "https://erogcveccbzsyhbgputf.supabase.co/storage/v1/object/public/demo-xx/card-xx/photo-5.jpg"
+    "remote_url": "https://erogcveccbzsyhbgputf.supabase.co/storage/v1/object/public/demo-83/card-83/photo-5.jpg"
   },
   {
     "id": 6,
@@ -45,7 +45,7 @@
     "descrip": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "category": "travel",
     "img": "/images/photo-6.jpg",
-    "remote_url": "https://erogcveccbzsyhbgputf.supabase.co/storage/v1/object/public/demo-xx/card-xx/photo-6.jpg"
+    "remote_url": "https://erogcveccbzsyhbgputf.supabase.co/storage/v1/object/public/demo-83/card-83/photo-6.jpg"
   },
   {
     "id": 7,
@@ -53,7 +53,7 @@
     "descrip": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "category": "travel",
     "img": "/images/photo-7.jpg",
-    "remote_url": "https://erogcveccbzsyhbgputf.supabase.co/storage/v1/object/public/demo-xx/card-xx/photo-7.jpg"
+    "remote_url": "https://erogcveccbzsyhbgputf.supabase.co/storage/v1/object/public/demo-83/card-83/photo-7.jpg"
   },
   {
     "id": 8,
@@ -61,7 +61,7 @@
     "descrip": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "category": "travel",
     "img": "/images/photo-8.jpg",
-    "remote_url": "https://erogcveccbzsyhbgputf.supabase.co/storage/v1/object/public/demo-xx/card-xx/photo-8.jpg"
+    "remote_url": "https://erogcveccbzsyhbgputf.supabase.co/storage/v1/object/public/demo-83/card-83/photo-8.jpg"
   },
   {
     "id": 9,
@@ -69,6 +69,6 @@
     "descrip": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "category": "travel",
     "img": "/images/photo-9.jpg",
-    "remote_url": "https://erogcveccbzsyhbgputf.supabase.co/storage/v1/object/public/demo-xx/card-xx/photo-9.jpg"
+    "remote_url": "https://erogcveccbzsyhbgputf.supabase.co/storage/v1/object/public/demo-83/card-83/photo-9.jpg"
   }
 ]

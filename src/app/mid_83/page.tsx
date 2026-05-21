@@ -1,5 +1,6 @@
 import Wrapper from './_assets/wrappers/Shop_83';
 import Link from 'next/link';
+import Image from 'next/image';
 
 import { prisma } from '@/lib/prisma';
 
@@ -30,10 +31,12 @@ const StaticPage_83 = async () => {
               const { cid, cname, size, image_url } = item;
               return (
                 <div className={`${size} menu-item`} key={cid}>
-                  <img
+                  <Image
                     className='background-image'
-                    src={image_url || 'default.jpg'}
-                    alt=''
+                    src={image_url || '/default.jpg'}
+                    alt={cname || ''}
+                    width={500}
+                    height={500}
                   />
                   <Link href={`/mid_83/${cname}`} className='content'>
                     <h1 className='title'>{item.cname}</h1>

@@ -1,12 +1,13 @@
 import Wrapper from '../_assets/wrappers/Shop_83';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const NavbarShopNode_83 = () => {
   return (
     <Wrapper>
       <div className='header'>
         <Link href='/mid_83' className='logo-container'>
-          <img src='/images/midterm/assets/crown.svg' />
+          <Image src='/images/midterm/assets/crown.svg' alt='Crown Logo' width={50} height={50} />
         </Link>
         <div className='options'>
           <Link href='/' className='option'>
@@ -22,10 +23,12 @@ const NavbarShopNode_83 = () => {
             Sign In
           </Link>
           <div className='cart-icon'>
-            <img
+            <Image
               className='shopping-icon'
               src='/images/midterm/assets/shopping-bag.svg'
-              alt=''
+              alt='Shopping Bag'
+              width={24}
+              height={24}
             />
           </div>
         </div>

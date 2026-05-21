@@ -19,5 +19,5 @@ export const deleteProduct_83 = async (formData: FormData) => {
     where: { pid: id },
   });
 
-  revalidatePath('/mid_83');
+  revalidatePath('/mid_83', 'layout');
 };

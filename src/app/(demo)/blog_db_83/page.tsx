@@ -1,4 +1,5 @@
 import { fetchBlogsDb } from '@/action/blog.action_83';
+import Image from 'next/image';
 
 const BlogDbPage_83 = async () => {
   const blogs = await fetchBlogsDb();
@@ -14,7 +15,13 @@ const BlogDbPage_83 = async () => {
           const { id, title, descrip, category, img } = blog;
           return (
             <article key={id} className='bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden transition-transform hover:scale-105'>
-              <img src={img} alt={title} className='w-full h-48 object-cover' />
+              <Image
+                src={img}
+                alt={title}
+                className='w-full h-48 object-cover'
+                width={400}
+                height={200}
+              />
               <div className='p-4'>
                 <div className='flex items-center space-x-2 text-blue-500 uppercase text-xs font-bold mb-2'>
                   <span>{category}</span>

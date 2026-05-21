@@ -1,40 +1,36 @@
 'use client';
 
 import { ClerkProvider, SignInButton, SignUpButton, UserButton, Show } from '@clerk/nextjs'
+import Link from 'next/link';
 import '../globals.css';
-import { Geist, Geist_Mono } from 'next/font/google';
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
-  subsets: ['latin'],
-});
-
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin'],
-});
-
-export default function RootLayout({
+export default function StoreLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
     <ClerkProvider>
-      <html lang='en'>
-        <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white text-black`}>
-          <header className='flex justify-end items-center p-4 gap-4 h-16'>
-            <Show when='signed-out'>
-              <SignInButton />
-              <SignUpButton>
-                <button className='bg-[#6c47ff] text-white rounded-full font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 cursor-pointer'>
-                  Sign Up
-                </button>
-              </SignUpButton>
-            </Show>
-            <Show when='signed-in'>
-              <UserButton />
-            </Show>
+        <div className="antialiased bg-white text-black min-h-screen">
+          <header className='flex justify-between items-center p-4 gap-4 h-16 border-b'>
+            <Link href='/' className='font-bold text-xl'>
+              TKUdemo_83
+            </Link>
+            <div className='flex items-center gap-4'>
+              <Show when='signed-out'>
+                <SignInButton mode='modal'>
+                  <button className="cursor-pointer">Sign in</button>
+                </SignInButton>
+                <SignUpButton mode='modal'>
+                  <button className='bg-[#6c47ff] text-white rounded-full font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 cursor-pointer'>
+                    Sign Up
+                  </button>
+                </SignUpButton>
+              </Show>
+              <Show when='signed-in'>
+                <UserButton />
+              </Show>
+            </div>
           </header>
           <div className='p-8'>
             <div className='section-title text-center mb-8'>
@@ -42,8 +38,7 @@ export default function RootLayout({
             </div>
             {children}
           </div>
-        </body>
-      </html>
+        </div>
     </ClerkProvider>
   )
 }
